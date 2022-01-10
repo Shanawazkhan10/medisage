@@ -1,0 +1,251 @@
+[2022-01-10 09:01:31Z INFO HostContext] No proxy settings were found based on environmental variables (http_proxy/https_proxy/HTTP_PROXY/HTTPS_PROXY)
+[2022-01-10 09:01:31Z INFO HostContext] Well known directory 'Bin': 'E:\medisage\actions-runner\actions-runner\bin'
+[2022-01-10 09:01:31Z INFO HostContext] Well known directory 'Root': 'E:\medisage\actions-runner\actions-runner'
+[2022-01-10 09:01:31Z INFO HostContext] Well known config file 'Credentials': 'E:\medisage\actions-runner\actions-runner\.credentials'
+[2022-01-10 09:01:31Z INFO HostContext] Well known directory 'Bin': 'E:\medisage\actions-runner\actions-runner\bin'
+[2022-01-10 09:01:31Z INFO HostContext] Well known directory 'Root': 'E:\medisage\actions-runner\actions-runner'
+[2022-01-10 09:01:31Z INFO HostContext] Well known config file 'Runner': 'E:\medisage\actions-runner\actions-runner\.runner'
+[2022-01-10 09:01:31Z INFO Listener] Runner is built for Windows (X64) - win-x64.
+[2022-01-10 09:01:31Z INFO Listener] RuntimeInformation: Microsoft Windows 10.0.19042.
+[2022-01-10 09:01:31Z INFO Listener] Version: 2.285.1
+[2022-01-10 09:01:31Z INFO Listener] Commit: 50afba61b40932c1084e31b5e9e7f5af325cc2ac
+[2022-01-10 09:01:31Z INFO Listener] Culture: en-US
+[2022-01-10 09:01:31Z INFO Listener] UI Culture: en-US
+[2022-01-10 09:01:31Z INFO HostContext] Well known directory 'Bin': 'E:\medisage\actions-runner\actions-runner\bin'
+[2022-01-10 09:01:31Z INFO HostContext] Well known directory 'Root': 'E:\medisage\actions-runner\actions-runner'
+[2022-01-10 09:01:31Z INFO Listener] Validating directory permissions for: 'E:\medisage\actions-runner\actions-runner'
+[2022-01-10 09:01:31Z INFO CommandLineParser] Parse
+[2022-01-10 09:01:31Z INFO CommandLineParser] Parsing 1 args
+[2022-01-10 09:01:31Z INFO CommandLineParser] parsing argument
+[2022-01-10 09:01:31Z INFO CommandLineParser] HasArgs: False
+[2022-01-10 09:01:31Z INFO CommandLineParser] Adding Command: run
+[2022-01-10 09:01:31Z INFO Listener] Arguments parsed
+[2022-01-10 09:01:31Z INFO Runner] ExecuteCommand
+[2022-01-10 09:01:31Z INFO ConfigurationStore] currentAssemblyLocation: E:\medisage\actions-runner\actions-runner\bin\Runner.Listener.dll
+[2022-01-10 09:01:31Z INFO HostContext] Well known directory 'Bin': 'E:\medisage\actions-runner\actions-runner\bin'
+[2022-01-10 09:01:31Z INFO ConfigurationStore] binPath: E:\medisage\actions-runner\actions-runner\bin
+[2022-01-10 09:01:31Z INFO HostContext] Well known directory 'Bin': 'E:\medisage\actions-runner\actions-runner\bin'
+[2022-01-10 09:01:31Z INFO HostContext] Well known directory 'Root': 'E:\medisage\actions-runner\actions-runner'
+[2022-01-10 09:01:31Z INFO ConfigurationStore] RootFolder: E:\medisage\actions-runner\actions-runner
+[2022-01-10 09:01:31Z INFO HostContext] Well known directory 'Bin': 'E:\medisage\actions-runner\actions-runner\bin'
+[2022-01-10 09:01:31Z INFO HostContext] Well known directory 'Root': 'E:\medisage\actions-runner\actions-runner'
+[2022-01-10 09:01:31Z INFO HostContext] Well known config file 'Runner': 'E:\medisage\actions-runner\actions-runner\.runner'
+[2022-01-10 09:01:31Z INFO ConfigurationStore] ConfigFilePath: E:\medisage\actions-runner\actions-runner\.runner
+[2022-01-10 09:01:31Z INFO HostContext] Well known directory 'Bin': 'E:\medisage\actions-runner\actions-runner\bin'
+[2022-01-10 09:01:31Z INFO HostContext] Well known directory 'Root': 'E:\medisage\actions-runner\actions-runner'
+[2022-01-10 09:01:31Z INFO HostContext] Well known config file 'Credentials': 'E:\medisage\actions-runner\actions-runner\.credentials'
+[2022-01-10 09:01:31Z INFO ConfigurationStore] CredFilePath: E:\medisage\actions-runner\actions-runner\.credentials
+[2022-01-10 09:01:31Z INFO HostContext] Well known directory 'Bin': 'E:\medisage\actions-runner\actions-runner\bin'
+[2022-01-10 09:01:31Z INFO HostContext] Well known directory 'Root': 'E:\medisage\actions-runner\actions-runner'
+[2022-01-10 09:01:31Z INFO HostContext] Well known config file 'MigratedCredentials': 'E:\medisage\actions-runner\actions-runner\.credentials_migrated'
+[2022-01-10 09:01:31Z INFO ConfigurationStore] MigratedCredFilePath: E:\medisage\actions-runner\actions-runner\.credentials_migrated
+[2022-01-10 09:01:31Z INFO HostContext] Well known directory 'Bin': 'E:\medisage\actions-runner\actions-runner\bin'
+[2022-01-10 09:01:31Z INFO HostContext] Well known directory 'Root': 'E:\medisage\actions-runner\actions-runner'
+[2022-01-10 09:01:31Z INFO HostContext] Well known config file 'Service': 'E:\medisage\actions-runner\actions-runner\.service'
+[2022-01-10 09:01:31Z INFO ConfigurationStore] ServiceConfigFilePath: E:\medisage\actions-runner\actions-runner\.service
+[2022-01-10 09:01:31Z INFO CommandSettings] Flag 'help': 'False'
+[2022-01-10 09:01:31Z INFO CommandSettings] Flag 'version': 'False'
+[2022-01-10 09:01:31Z INFO CommandSettings] Flag 'commit': 'False'
+[2022-01-10 09:01:31Z INFO CommandSettings] Flag 'check': 'False'
+[2022-01-10 09:01:31Z INFO CommandSettings] Command 'configure': 'False'
+[2022-01-10 09:01:31Z INFO CommandSettings] Command 'remove': 'False'
+[2022-01-10 09:01:31Z INFO CommandSettings] Command 'warmup': 'False'
+[2022-01-10 09:01:31Z INFO ConfigurationManager] LoadSettings
+[2022-01-10 09:01:31Z INFO ConfigurationStore] IsConfigured()
+[2022-01-10 09:01:31Z INFO ConfigurationStore] IsConfigured: True
+[2022-01-10 09:01:31Z INFO ConfigurationManager] Is configured: True
+[2022-01-10 09:01:31Z INFO ConfigurationStore] Read setting file: 303 chars
+[2022-01-10 09:01:31Z INFO ConfigurationManager] Settings Loaded
+[2022-01-10 09:01:31Z INFO ConfigurationStore] IsServiceConfigured()
+[2022-01-10 09:01:31Z INFO ConfigurationStore] IsServiceConfigured: False
+[2022-01-10 09:01:31Z INFO CommandSettings] Command 'run': 'True'
+[2022-01-10 09:01:31Z INFO ConfigurationStore] IsConfigured()
+[2022-01-10 09:01:31Z INFO ConfigurationStore] IsConfigured: True
+[2022-01-10 09:01:31Z INFO ConfigurationManager] Is configured: True
+[2022-01-10 09:01:31Z INFO Runner] Could not parse the argument value '' for StartupType. Defaulting to Manual
+[2022-01-10 09:01:31Z INFO Runner] Set runner startup type - Manual
+[2022-01-10 09:01:31Z INFO CommandSettings] Flag 'once': 'False'
+[2022-01-10 09:01:31Z INFO CommandSettings] Flag 'once': 'False'
+[2022-01-10 09:01:31Z INFO Runner] RunAsync
+[2022-01-10 09:01:31Z INFO ConfigurationManager] LoadSettings
+[2022-01-10 09:01:31Z INFO ConfigurationStore] IsConfigured()
+[2022-01-10 09:01:31Z INFO ConfigurationStore] IsConfigured: True
+[2022-01-10 09:01:31Z INFO ConfigurationManager] Is configured: True
+[2022-01-10 09:01:31Z INFO ConfigurationManager] Settings Loaded
+[2022-01-10 09:01:31Z INFO MessageListener] {
+  "AgentId": 2,
+  "AgentName": "DESKTOP-LJ550LC",
+  "PoolId": 1,
+  "PoolName": "Default",
+  "ServerUrl": "https://pipelines.actions.githubusercontent.com/RTMhic4U29snVXmAo0mwIotqSmGNdtaCPwAMJPFX0ySye9wFp5",
+  "GitHubUrl": "https://github.com/Shanawazkhan10/medisage",
+  "WorkFolder": "_work"
+}
+[2022-01-10 09:01:31Z INFO MessageListener] Loading Credentials
+[2022-01-10 09:01:31Z INFO ConfigurationStore] HasCredentials()
+[2022-01-10 09:01:31Z INFO ConfigurationStore] stored True
+[2022-01-10 09:01:31Z INFO CredentialManager] GetCredentialProvider
+[2022-01-10 09:01:31Z INFO CredentialManager] Creating type OAuth
+[2022-01-10 09:01:31Z INFO CredentialManager] Creating credential type: OAuth
+[2022-01-10 09:01:31Z INFO HostContext] Well known directory 'Bin': 'E:\medisage\actions-runner\actions-runner\bin'
+[2022-01-10 09:01:31Z INFO HostContext] Well known directory 'Root': 'E:\medisage\actions-runner\actions-runner'
+[2022-01-10 09:01:31Z INFO HostContext] Well known config file 'RSACredentials': 'E:\medisage\actions-runner\actions-runner\.credentials_rsaparams'
+[2022-01-10 09:01:31Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file E:\medisage\actions-runner\actions-runner\.credentials_rsaparams
+[2022-01-10 09:01:31Z INFO MessageListener] Attempt to create session.
+[2022-01-10 09:01:31Z INFO MessageListener] Connecting to the Runner Server...
+[2022-01-10 09:01:31Z INFO RunnerServer] Establish connection with 100 seconds timeout.
+[2022-01-10 09:01:31Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2022-01-10 09:01:31Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2022-01-10 09:01:31Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2022-01-10 09:01:31Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2022-01-10 09:01:31Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2022-01-10 09:01:32Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2022-01-10 09:01:32Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2022-01-10 09:01:32Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2022-01-10 09:01:32Z INFO MessageListener] VssConnection created
+[2022-01-10 09:01:32Z INFO Terminal] WRITE LINE: 
+[2022-01-10 09:01:32Z INFO Terminal] WRITE LINE: 
+[2022-01-10 09:01:33Z WARN GitHubActionsService] Authentication failed with status code 401.
+WWW-Authenticate: Bearer
+Strict-Transport-Security: max-age=2592000
+X-TFS-ProcessId: 12808a11-f11b-4a35-9e99-80331cef25ca
+ActivityId: 9f606ccc-c986-4f3c-b0c4-8cdcfa265e14
+X-TFS-Session: ef73afaf-49da-4ee1-9296-c4316fd9cc37
+X-VSS-E2EID: a15e2b32-c3c0-40ce-bb27-4f9e2b09ceaf
+X-VSS-SenderDeploymentId: 2c974d96-2c30-cef5-eff2-3e0511a903a5
+X-TFS-ServiceError: The+user+%27System%3aPublicAccess%3baaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa%27+is+not+authorized+to+access+this+resource.
+X-VSS-S2STargetService: 0000005A-0000-8888-8000-000000000000/visualstudio.com
+X-Cache: CONFIG_NOCACHE
+X-MSEdge-Ref: Ref A: 8B507BB928AB4C7DB0BD98ED9ED5CE34 Ref B: BOM02EDGE0608 Ref C: 2022-01-10T09:01:33Z
+Date: Mon, 10 Jan 2022 09:01:33 GMT
+
+[2022-01-10 09:01:33Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file E:\medisage\actions-runner\actions-runner\.credentials_rsaparams
+[2022-01-10 09:01:33Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file E:\medisage\actions-runner\actions-runner\.credentials_rsaparams
+[2022-01-10 09:01:33Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2022-01-10 09:01:33Z INFO MessageListener] Session created.
+[2022-01-10 09:01:33Z INFO Terminal] WRITE LINE: Current runner version: '2.285.1'
+[2022-01-10 09:01:33Z INFO Terminal] WRITE LINE: 2022-01-10 09:01:33Z: Listening for Jobs
+[2022-01-10 09:01:33Z INFO JobDispatcher] Set runner/worker IPC timeout to 30 seconds.
+[2022-01-10 09:01:37Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file E:\medisage\actions-runner\actions-runner\.credentials_rsaparams
+[2022-01-10 09:01:38Z INFO MessageListener] Message '10' received from session 'ed49582f-aa2a-4659-b9ad-7b3fdfb8090c'.
+[2022-01-10 09:01:38Z INFO JobDispatcher] Job request 9 for plan 8e78c54f-2eb8-44c5-9015-34a59a805666 job c269f388-e93f-55df-e42c-8ad0a472b48b received.
+[2022-01-10 09:01:38Z INFO JobDispatcher] Pull OrchestrationId 8e78c54f-2eb8-44c5-9015-34a59a805666.build._16_x from JWT claims
+[2022-01-10 09:01:38Z INFO Terminal] WRITE LINE: 2022-01-10 09:01:38Z: Running job: build (16.x)
+[2022-01-10 09:01:38Z INFO JobDispatcher] Start renew job request 9 for job c269f388-e93f-55df-e42c-8ad0a472b48b.
+[2022-01-10 09:01:38Z INFO JobDispatcher] Successfully renew job request 9, job is valid till 1/10/2022 9:11:39 AM
+[2022-01-10 09:01:38Z INFO HostContext] Well known directory 'Bin': 'E:\medisage\actions-runner\actions-runner\bin'
+[2022-01-10 09:01:38Z INFO ProcessInvokerWrapper] Starting process:
+[2022-01-10 09:01:38Z INFO ProcessInvokerWrapper]   File name: 'E:\medisage\actions-runner\actions-runner\bin\Runner.Worker.exe'
+[2022-01-10 09:01:38Z INFO ProcessInvokerWrapper]   Arguments: 'spawnclient 1696 2128'
+[2022-01-10 09:01:38Z INFO ProcessInvokerWrapper]   Working directory: 'E:\medisage\actions-runner\actions-runner\bin'
+[2022-01-10 09:01:38Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2022-01-10 09:01:38Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2022-01-10 09:01:38Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'True'
+[2022-01-10 09:01:38Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2022-01-10 09:01:38Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2022-01-10 09:01:38Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2022-01-10 09:01:38Z INFO ProcessInvokerWrapper]   High priority process: 'True'
+[2022-01-10 09:01:38Z INFO ProcessInvokerWrapper] Process started with process id 8732, waiting for process exit.
+[2022-01-10 09:01:38Z INFO JobDispatcher] Send job request message to worker for job c269f388-e93f-55df-e42c-8ad0a472b48b.
+[2022-01-10 09:01:38Z INFO ProcessChannel] Sending message of length 20614, with hash '93ccfac98751869451fa4b9de089c5ec701a3c1a8d93faf137e037f5a77bd8d3'
+[2022-01-10 09:01:39Z INFO JobNotification] Entering JobStarted Notification
+[2022-01-10 09:01:39Z INFO JobNotification] Entering StartMonitor
+[2022-01-10 09:02:38Z INFO JobDispatcher] Successfully renew job request 9, job is valid till 1/10/2022 9:12:39 AM
+[2022-01-10 09:03:39Z INFO JobDispatcher] Successfully renew job request 9, job is valid till 1/10/2022 9:13:40 AM
+[2022-01-10 09:04:40Z INFO JobDispatcher] Successfully renew job request 9, job is valid till 1/10/2022 9:14:41 AM
+[2022-01-10 09:05:40Z INFO JobDispatcher] Successfully renew job request 9, job is valid till 1/10/2022 9:15:41 AM
+[2022-01-10 09:06:41Z INFO JobDispatcher] Successfully renew job request 9, job is valid till 1/10/2022 9:16:42 AM
+[2022-01-10 09:07:42Z INFO JobDispatcher] Successfully renew job request 9, job is valid till 1/10/2022 9:17:43 AM
+[2022-01-10 09:08:42Z INFO JobDispatcher] Successfully renew job request 9, job is valid till 1/10/2022 9:18:43 AM
+[2022-01-10 09:09:43Z INFO JobDispatcher] Successfully renew job request 9, job is valid till 1/10/2022 9:19:43 AM
+[2022-01-10 09:10:43Z INFO JobDispatcher] Successfully renew job request 9, job is valid till 1/10/2022 9:20:44 AM
+[2022-01-10 09:11:43Z INFO JobDispatcher] Successfully renew job request 9, job is valid till 1/10/2022 9:21:44 AM
+[2022-01-10 09:12:47Z WARN GitHubActionsService] GET request to https://pipelines.actions.githubusercontent.com/RTMhic4U29snVXmAo0mwIotqSmGNdtaCPwAMJPFX0ySye9wFp5/_apis/distributedtask/pools/1/messages?sessionId=ed49582f-aa2a-4659-b9ad-7b3fdfb8090c&lastMessageId=10 timed out after 60 seconds.
+[2022-01-10 09:12:48Z ERR  MessageListener] Catch exception during get next message.
+[2022-01-10 09:12:54Z WARN GitHubActionsService] Attempt 1 of PATCH request to https://pipelines.actions.githubusercontent.com/RTMhic4U29snVXmAo0mwIotqSmGNdtaCPwAMJPFX0ySye9wFp5/_apis/distributedtask/pools/1/jobrequests/9?lockToken=00000000-0000-0000-0000-000000000000 failed (Socket Error: ConnectionReset). The operation will be retried in 10.978 seconds.
+[2022-01-10 09:12:54Z ERR  MessageListener] System.TimeoutException: The HTTP request timed out after 00:01:00.
+ ---> System.Threading.Tasks.TaskCanceledException: The operation was canceled.
+ ---> System.IO.IOException: Unable to read data from the transport connection: The I/O operation has been aborted because of either a thread exit or an application request..
+ ---> System.Net.Sockets.SocketException (995): The I/O operation has been aborted because of either a thread exit or an application request.
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.GetResult(Int16 token)
+   at System.Net.Security.SslStream.<FillBufferAsync>g__InternalFillBufferAsync|215_0[TReadAdapter](TReadAdapter adap, ValueTask`1 task, Int32 min, Int32 initial)
+   at System.Net.Security.SslStream.ReadAsyncInternal[TReadAdapter](TReadAdapter adapter, Memory`1 buffer)
+   at System.Net.Http.HttpConnection.SendAsyncCore(HttpRequestMessage request, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnection.SendAsyncCore(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.AuthenticationHelper.SendWithNtAuthAsync(HttpRequestMessage request, Uri authUri, ICredentials credentials, Boolean isProxyAuth, HttpConnection connection, HttpConnectionPool connectionPool, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithNtConnectionAuthAsync(HttpConnection connection, HttpRequestMessage request, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.AuthenticationHelper.SendWithAuthAsync(HttpRequestMessage request, Uri authUri, ICredentials credentials, Boolean preAuthenticate, Boolean isProxyAuth, Boolean doRequestAuth, HttpConnectionPool pool, CancellationToken cancellationToken)
+   at System.Net.Http.DecompressionHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at GitHub.Services.Common.VssHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at GitHub.Services.Common.VssHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at GitHub.Services.Common.VssHttpRetryMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.FinishSendAsyncBuffered(Task`1 sendTask, HttpRequestMessage request, CancellationTokenSource cts, Boolean disposeCts)
+   at GitHub.Services.WebApi.VssHttpClientBase.SendAsync(HttpRequestMessage message, HttpCompletionOption completionOption, Object userState, CancellationToken cancellationToken)
+   at GitHub.Services.WebApi.VssHttpClientBase.SendAsync[T](HttpRequestMessage message, Object userState, CancellationToken cancellationToken)
+   at GitHub.Services.WebApi.VssHttpClientBase.SendAsync[T](HttpMethod method, IEnumerable`1 additionalHeaders, Guid locationId, Object routeValues, ApiResourceVersion version, HttpContent content, IEnumerable`1 queryParameters, Object userState, CancellationToken cancellationToken)
+   at GitHub.Runner.Listener.MessageListener.GetNextMessageAsync(CancellationToken token)
+[2022-01-10 09:12:54Z ERR  MessageListener] #####################################################
+[2022-01-10 09:12:54Z ERR  MessageListener] System.Threading.Tasks.TaskCanceledException: The operation was canceled.
+ ---> System.IO.IOException: Unable to read data from the transport connection: The I/O operation has been aborted because of either a thread exit or an application request..
+ ---> System.Net.Sockets.SocketException (995): The I/O operation has been aborted because of either a thread exit or an application request.
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.GetResult(Int16 token)
+   at System.Net.Security.SslStream.<FillBufferAsync>g__InternalFillBufferAsync|215_0[TReadAdapter](TReadAdapter adap, ValueTask`1 task, Int32 min, Int32 initial)
+   at System.Net.Security.SslStream.ReadAsyncInternal[TReadAdapter](TReadAdapter adapter, Memory`1 buffer)
+   at System.Net.Http.HttpConnection.SendAsyncCore(HttpRequestMessage request, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnection.SendAsyncCore(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.AuthenticationHelper.SendWithNtAuthAsync(HttpRequestMessage request, Uri authUri, ICredentials credentials, Boolean isProxyAuth, HttpConnection connection, HttpConnectionPool connectionPool, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithNtConnectionAuthAsync(HttpConnection connection, HttpRequestMessage request, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.AuthenticationHelper.SendWithAuthAsync(HttpRequestMessage request, Uri authUri, ICredentials credentials, Boolean preAuthenticate, Boolean isProxyAuth, Boolean doRequestAuth, HttpConnectionPool pool, CancellationToken cancellationToken)
+   at System.Net.Http.DecompressionHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at GitHub.Services.Common.VssHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+[2022-01-10 09:12:54Z ERR  MessageListener] #####################################################
+[2022-01-10 09:12:54Z ERR  MessageListener] System.IO.IOException: Unable to read data from the transport connection: The I/O operation has been aborted because of either a thread exit or an application request..
+ ---> System.Net.Sockets.SocketException (995): The I/O operation has been aborted because of either a thread exit or an application request.
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.GetResult(Int16 token)
+   at System.Net.Security.SslStream.<FillBufferAsync>g__InternalFillBufferAsync|215_0[TReadAdapter](TReadAdapter adap, ValueTask`1 task, Int32 min, Int32 initial)
+   at System.Net.Security.SslStream.ReadAsyncInternal[TReadAdapter](TReadAdapter adapter, Memory`1 buffer)
+   at System.Net.Http.HttpConnection.SendAsyncCore(HttpRequestMessage request, CancellationToken cancellationToken)
+[2022-01-10 09:12:54Z ERR  MessageListener] #####################################################
+[2022-01-10 09:12:54Z ERR  MessageListener] System.Net.Sockets.SocketException (995): The I/O operation has been aborted because of either a thread exit or an application request.
+[2022-01-10 09:12:54Z INFO MessageListener] Retriable exception: The HTTP request timed out after 00:01:00.
+[2022-01-10 09:12:54Z ERR  Terminal] WRITE ERROR: 2022-01-10 09:12:54Z: Runner connect error: The HTTP request timed out after 00:01:00.. Retrying until reconnected.
+[2022-01-10 09:12:55Z INFO RunnerServer] Refresh MessageQueue VssConnection to get on a different AFD node.
+[2022-01-10 09:12:55Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2022-01-10 09:12:56Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2022-01-10 09:12:57Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2022-01-10 09:12:58Z INFO MessageListener] Sleeping for 25.893 seconds before retrying.
+[2022-01-10 09:13:06Z INFO JobDispatcher] Successfully renew job request 9, job is valid till 1/10/2022 9:23:06 AM
+[2022-01-10 09:14:06Z INFO JobDispatcher] Successfully renew job request 9, job is valid till 1/10/2022 9:24:07 AM
+[2022-01-10 09:14:14Z INFO Terminal] WRITE LINE: 2022-01-10 09:14:14Z: Runner reconnected.
+[2022-01-10 09:15:07Z INFO JobDispatcher] Successfully renew job request 9, job is valid till 1/10/2022 9:25:08 AM
+[2022-01-10 09:15:15Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2022-01-10 09:15:15Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2022-01-10 09:15:15Z INFO ProcessInvokerWrapper] Finished process 8732 with exit code 102, and elapsed time 00:13:37.4302145.
+[2022-01-10 09:15:15Z INFO JobDispatcher] Worker finished for job c269f388-e93f-55df-e42c-8ad0a472b48b. Code: 102
+[2022-01-10 09:15:16Z INFO JobDispatcher] finish job request for job c269f388-e93f-55df-e42c-8ad0a472b48b with result: Failed
+[2022-01-10 09:15:16Z INFO Terminal] WRITE LINE: 2022-01-10 09:15:16Z: Job build (16.x) completed with result: Failed
+[2022-01-10 09:15:16Z INFO JobDispatcher] Stop renew job request for job c269f388-e93f-55df-e42c-8ad0a472b48b.
+[2022-01-10 09:15:16Z INFO JobDispatcher] job renew has been canceled, stop renew job request 9.
+[2022-01-10 09:15:16Z INFO JobNotification] Entering JobCompleted Notification
+[2022-01-10 09:15:16Z INFO JobNotification] Entering EndMonitor
+[2022-01-10 09:17:09Z INFO Terminal] WRITE LINE: Exiting...
+[2022-01-10 09:17:09Z INFO ConfigurationStore] IsServiceConfigured()
+[2022-01-10 09:17:09Z INFO ConfigurationStore] IsServiceConfigured: False
+[2022-01-10 09:17:09Z INFO HostContext] Runner will be shutdown for UserCancelled
+[2022-01-10 09:17:09Z WARN GitHubActionsService] GET request to https://pipelines.actions.githubusercontent.com/RTMhic4U29snVXmAo0mwIotqSmGNdtaCPwAMJPFX0ySye9wFp5/_apis/distributedtask/pools/1/messages?sessionId=ed49582f-aa2a-4659-b9ad-7b3fdfb8090c&lastMessageId=10 has been cancelled.
+[2022-01-10 09:17:09Z INFO MessageListener] Get next message has been cancelled.
+[2022-01-10 09:17:09Z INFO JobDispatcher] Shutting down JobDispatcher. Make sure all WorkerDispatcher has finished.
+[2022-01-10 09:17:09Z INFO JobDispatcher] Ensure WorkerDispather for job c269f388-e93f-55df-e42c-8ad0a472b48b run to finish, cancel any running job.
+[2022-01-10 09:17:09Z INFO JobDispatcher] Job request c269f388-e93f-55df-e42c-8ad0a472b48b processed succeed.
+[2022-01-10 09:17:09Z INFO Listener] Runner execution been cancelled.
