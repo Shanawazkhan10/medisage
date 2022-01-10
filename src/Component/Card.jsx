@@ -9,13 +9,13 @@ const Card = () => {
       <div className="container">
         <div className="row">
           <div className="col-sm">
-            <div class="card" style={{ width: "18rem", borderRadius: 20 }}>
-              <div class="card-body">
-                <h5 class="card-title">
+            <div className="card" style={{ width: "18rem", borderRadius: 20 }}>
+              <div className="card-body">
+                <h5 className="card-title">
                   <img src={ico1} />
                 </h5>
-                <h6 class="card-subtitle mb-2 text-muted">Search doctor</h6>
-                <p class="card-text">
+                <h6 className="card-subtitle mb-2 text-muted">Search doctor</h6>
+                <p className="card-text">
                   Some quick example text to build on the card title and make up
                   the bulk of the card's content.
                 </p>
@@ -23,13 +23,13 @@ const Card = () => {
             </div>
           </div>
           <div className="col-sm">
-            <div class="card" style={{ width: "18rem", borderRadius: 20 }}>
-              <div class="card-body">
-                <h5 class="card-title">
+            <div className="card" style={{ width: "18rem", borderRadius: 20 }}>
+              <div className="card-body">
+                <h5 className="card-title">
                   <img src={ico3} />
                 </h5>
-                <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                <p class="card-text">
+                <h6 className="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                <p className="card-text">
                   Some quick example text to build on the card title and make up
                   the bulk of the card's content.
                 </p>
@@ -37,13 +37,13 @@ const Card = () => {
             </div>
           </div>
           <div className="col-sm">
-            <div class="card" style={{ width: "18rem", borderRadius: 20 }}>
-              <div class="card-body">
-                <h5 class="card-title">
+            <div className="card" style={{ width: "18rem", borderRadius: 20 }}>
+              <div className="card-body">
+                <h5 className="card-title">
                   <img src={ico2} />
                 </h5>
-                <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                <p class="card-text">
+                <h6 className="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                <p className="card-text">
                   Some quick example text to build on the card title and make up
                   the bulk of the card's content.
                 </p>
@@ -55,13 +55,13 @@ const Card = () => {
       <div className="container mt-3">
         <div className="row">
           <div className="col-sm">
-            <div class="card" style={{ width: "18rem", borderRadius: 20 }}>
-              <div class="card-body">
-                <h5 class="card-title">
+            <div className="card" style={{ width: "18rem", borderRadius: 20 }}>
+              <div className="card-body">
+                <h5 className="card-title">
                   <img src={ico4} />
                 </h5>
-                <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                <p class="card-text">
+                <h6 className="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                <p className="card-text">
                   Some quick example text to build on the card title and make up
                   the bulk of the card's content.
                 </p>
@@ -69,13 +69,13 @@ const Card = () => {
             </div>
           </div>
           <div className="col-sm">
-            <div class="card" style={{ width: "18rem", borderRadius: 20 }}>
-              <div class="card-body">
-                <h5 class="card-title">
+            <div className="card" style={{ width: "18rem", borderRadius: 20 }}>
+              <div className="card-body">
+                <h5 className="card-title">
                   <img src={ico1} />
                 </h5>
-                <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                <p class="card-text">
+                <h6 className="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                <p className="card-text">
                   Some quick example text to build on the card title and make up
                   the bulk of the card's content.
                 </p>
@@ -83,13 +83,13 @@ const Card = () => {
             </div>
           </div>
           <div className="col-sm">
-            <div class="card" style={{ width: "18rem", borderRadius: 20 }}>
-              <div class="card-body">
-                <h5 class="card-title">
+            <div className="card" style={{ width: "18rem", borderRadius: 20 }}>
+              <div className="card-body">
+                <h5 className="card-title">
                   <img src={ico4} />
                 </h5>
-                <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                <p class="card-text">
+                <h6 className="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                <p className="card-text">
                   Some quick example text to build on the card title and make up
                   the bulk of the card's content.
                 </p>
