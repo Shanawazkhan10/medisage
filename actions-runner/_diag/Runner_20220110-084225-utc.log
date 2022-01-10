@@ -1,0 +1,397 @@
+[2022-01-10 08:42:25Z INFO HostContext] No proxy settings were found based on environmental variables (http_proxy/https_proxy/HTTP_PROXY/HTTPS_PROXY)
+[2022-01-10 08:42:25Z INFO HostContext] Well known directory 'Bin': 'E:\medisage\actions-runner\bin'
+[2022-01-10 08:42:25Z INFO HostContext] Well known directory 'Root': 'E:\medisage\actions-runner'
+[2022-01-10 08:42:25Z INFO HostContext] Well known config file 'Credentials': 'E:\medisage\actions-runner\.credentials'
+[2022-01-10 08:42:25Z INFO HostContext] Well known directory 'Bin': 'E:\medisage\actions-runner\bin'
+[2022-01-10 08:42:25Z INFO HostContext] Well known directory 'Root': 'E:\medisage\actions-runner'
+[2022-01-10 08:42:25Z INFO HostContext] Well known config file 'Runner': 'E:\medisage\actions-runner\.runner'
+[2022-01-10 08:42:25Z INFO Listener] Runner is built for Windows (X64) - win-x64.
+[2022-01-10 08:42:25Z INFO Listener] RuntimeInformation: Microsoft Windows 10.0.19042.
+[2022-01-10 08:42:25Z INFO Listener] Version: 2.285.1
+[2022-01-10 08:42:25Z INFO Listener] Commit: 50afba61b40932c1084e31b5e9e7f5af325cc2ac
+[2022-01-10 08:42:25Z INFO Listener] Culture: en-US
+[2022-01-10 08:42:25Z INFO Listener] UI Culture: en-US
+[2022-01-10 08:42:25Z INFO HostContext] Well known directory 'Bin': 'E:\medisage\actions-runner\bin'
+[2022-01-10 08:42:25Z INFO HostContext] Well known directory 'Root': 'E:\medisage\actions-runner'
+[2022-01-10 08:42:25Z INFO Listener] Validating directory permissions for: 'E:\medisage\actions-runner'
+[2022-01-10 08:42:25Z INFO CommandLineParser] Parse
+[2022-01-10 08:42:25Z INFO CommandLineParser] Parsing 5 args
+[2022-01-10 08:42:25Z INFO CommandLineParser] parsing argument
+[2022-01-10 08:42:25Z INFO CommandLineParser] HasArgs: False
+[2022-01-10 08:42:25Z INFO CommandLineParser] Adding Command: configure
+[2022-01-10 08:42:25Z INFO CommandLineParser] parsing argument
+[2022-01-10 08:42:25Z INFO CommandLineParser] HasArgs: True
+[2022-01-10 08:42:25Z INFO CommandLineParser] arg: url
+[2022-01-10 08:42:25Z INFO CommandLineParser] parsing argument
+[2022-01-10 08:42:25Z INFO CommandLineParser] HasArgs: True
+[2022-01-10 08:42:25Z INFO CommandLineParser] Adding option 'url': 'https://github.com/Shanawazkhan10/medisage'
+[2022-01-10 08:42:25Z INFO CommandLineParser] parsing argument
+[2022-01-10 08:42:25Z INFO CommandLineParser] HasArgs: True
+[2022-01-10 08:42:25Z INFO CommandLineParser] arg: token
+[2022-01-10 08:42:25Z INFO CommandLineParser] parsing argument
+[2022-01-10 08:42:25Z INFO CommandLineParser] HasArgs: True
+[2022-01-10 08:42:25Z INFO CommandLineParser] Adding option 'token': '***'
+[2022-01-10 08:42:25Z INFO Listener] Arguments parsed
+[2022-01-10 08:42:25Z INFO Runner] ExecuteCommand
+[2022-01-10 08:42:25Z INFO ConfigurationStore] currentAssemblyLocation: E:\medisage\actions-runner\bin\Runner.Listener.dll
+[2022-01-10 08:42:25Z INFO HostContext] Well known directory 'Bin': 'E:\medisage\actions-runner\bin'
+[2022-01-10 08:42:25Z INFO ConfigurationStore] binPath: E:\medisage\actions-runner\bin
+[2022-01-10 08:42:25Z INFO HostContext] Well known directory 'Bin': 'E:\medisage\actions-runner\bin'
+[2022-01-10 08:42:25Z INFO HostContext] Well known directory 'Root': 'E:\medisage\actions-runner'
+[2022-01-10 08:42:25Z INFO ConfigurationStore] RootFolder: E:\medisage\actions-runner
+[2022-01-10 08:42:25Z INFO HostContext] Well known directory 'Bin': 'E:\medisage\actions-runner\bin'
+[2022-01-10 08:42:25Z INFO HostContext] Well known directory 'Root': 'E:\medisage\actions-runner'
+[2022-01-10 08:42:25Z INFO HostContext] Well known config file 'Runner': 'E:\medisage\actions-runner\.runner'
+[2022-01-10 08:42:25Z INFO ConfigurationStore] ConfigFilePath: E:\medisage\actions-runner\.runner
+[2022-01-10 08:42:25Z INFO HostContext] Well known directory 'Bin': 'E:\medisage\actions-runner\bin'
+[2022-01-10 08:42:25Z INFO HostContext] Well known directory 'Root': 'E:\medisage\actions-runner'
+[2022-01-10 08:42:25Z INFO HostContext] Well known config file 'Credentials': 'E:\medisage\actions-runner\.credentials'
+[2022-01-10 08:42:25Z INFO ConfigurationStore] CredFilePath: E:\medisage\actions-runner\.credentials
+[2022-01-10 08:42:25Z INFO HostContext] Well known directory 'Bin': 'E:\medisage\actions-runner\bin'
+[2022-01-10 08:42:25Z INFO HostContext] Well known directory 'Root': 'E:\medisage\actions-runner'
+[2022-01-10 08:42:25Z INFO HostContext] Well known config file 'MigratedCredentials': 'E:\medisage\actions-runner\.credentials_migrated'
+[2022-01-10 08:42:25Z INFO ConfigurationStore] MigratedCredFilePath: E:\medisage\actions-runner\.credentials_migrated
+[2022-01-10 08:42:25Z INFO HostContext] Well known directory 'Bin': 'E:\medisage\actions-runner\bin'
+[2022-01-10 08:42:25Z INFO HostContext] Well known directory 'Root': 'E:\medisage\actions-runner'
+[2022-01-10 08:42:25Z INFO HostContext] Well known config file 'Service': 'E:\medisage\actions-runner\.service'
+[2022-01-10 08:42:25Z INFO ConfigurationStore] ServiceConfigFilePath: E:\medisage\actions-runner\.service
+[2022-01-10 08:42:25Z INFO CommandSettings] Flag 'help': 'False'
+[2022-01-10 08:42:25Z INFO CommandSettings] Flag 'version': 'False'
+[2022-01-10 08:42:25Z INFO CommandSettings] Flag 'commit': 'False'
+[2022-01-10 08:42:25Z INFO CommandSettings] Flag 'check': 'False'
+[2022-01-10 08:42:25Z INFO CommandSettings] Command 'configure': 'True'
+[2022-01-10 08:42:25Z INFO Terminal] WRITE LINE: 
+[2022-01-10 08:42:25Z INFO Terminal] WRITE LINE: --------------------------------------------------------------------------------
+[2022-01-10 08:42:25Z INFO Terminal] WRITE LINE: |        ____ _ _   _   _       _          _        _   _                      |
+[2022-01-10 08:42:25Z INFO Terminal] WRITE LINE: |       / ___(_) |_| | | |_   _| |__      / \   ___| |_(_) ___  _ __  ___      |
+[2022-01-10 08:42:25Z INFO Terminal] WRITE LINE: |      | |  _| | __| |_| | | | | '_ \    / _ \ / __| __| |/ _ \| '_ \/ __|     |
+[2022-01-10 08:42:25Z INFO Terminal] WRITE LINE: |      | |_| | | |_|  _  | |_| | |_) |  / ___ \ (__| |_| | (_) | | | \__ \     |
+[2022-01-10 08:42:25Z INFO Terminal] WRITE LINE: |       \____|_|\__|_| |_|\__,_|_.__/  /_/   \_\___|\__|_|\___/|_| |_|___/     |
+[2022-01-10 08:42:25Z INFO Terminal] WRITE LINE: |                                                                              |
+[2022-01-10 08:42:25Z INFO Terminal] WRITE: |                       
+[2022-01-10 08:42:25Z INFO Terminal] WRITE: Self-hosted runner registration
+[2022-01-10 08:42:25Z INFO Terminal] WRITE LINE:                         |
+[2022-01-10 08:42:25Z INFO Terminal] WRITE LINE: |                                                                              |
+[2022-01-10 08:42:25Z INFO Terminal] WRITE LINE: --------------------------------------------------------------------------------
+[2022-01-10 08:42:25Z INFO ConfigurationManager] ConfigureAsync
+[2022-01-10 08:42:25Z INFO ConfigurationStore] IsConfigured()
+[2022-01-10 08:42:25Z INFO ConfigurationStore] IsConfigured: False
+[2022-01-10 08:42:25Z INFO ConfigurationManager] Is configured: False
+[2022-01-10 08:42:25Z INFO CommandSettings] Arg 'url': 'https://github.com/Shanawazkhan10/medisage'
+[2022-01-10 08:42:25Z INFO CommandSettings] Remove url from Arg dictionary.
+[2022-01-10 08:42:25Z INFO CommandSettings] Arg 'token': '***'
+[2022-01-10 08:42:25Z INFO CommandSettings] Remove token from Arg dictionary.
+[2022-01-10 08:42:26Z INFO ConfigurationManager] Http response code: OK from 'POST https://api.github.com/actions/runner-registration'
+[2022-01-10 08:42:26Z INFO ConfigurationManager] cred retrieved via GitHub auth
+[2022-01-10 08:42:26Z INFO RunnerServer] Establish connection with 100 seconds timeout.
+[2022-01-10 08:42:26Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2022-01-10 08:42:26Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2022-01-10 08:42:26Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2022-01-10 08:42:26Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2022-01-10 08:42:26Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2022-01-10 08:42:26Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2022-01-10 08:42:27Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2022-01-10 08:42:27Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2022-01-10 08:42:27Z INFO Terminal] WRITE LINE: 
+[2022-01-10 08:42:27Z INFO ConfigurationManager] Test Connection complete.
+[2022-01-10 08:42:27Z INFO HostContext] Well known directory 'Bin': 'E:\medisage\actions-runner\bin'
+[2022-01-10 08:42:27Z INFO HostContext] Well known directory 'Root': 'E:\medisage\actions-runner'
+[2022-01-10 08:42:27Z INFO HostContext] Well known config file 'RSACredentials': 'E:\medisage\actions-runner\.credentials_rsaparams'
+[2022-01-10 08:42:27Z INFO RSAEncryptedFileKeyManager] Creating new RSA key using 2048-bit key length
+[2022-01-10 08:42:27Z INFO RSAEncryptedFileKeyManager] Successfully saved RSA key parameters to file E:\medisage\actions-runner\.credentials_rsaparams
+[2022-01-10 08:42:27Z INFO CommandSettings] Arg 'runnergroup': ''
+[2022-01-10 08:42:27Z INFO CommandSettings] Flag 'unattended': 'False'
+[2022-01-10 08:42:27Z INFO PromptManager] ReadValue
+[2022-01-10 08:42:27Z INFO Terminal] WRITE: Enter the name of the runner group to add this runner to: 
+[2022-01-10 08:42:27Z INFO Terminal] WRITE: [press Enter for Default] 
+[2022-01-10 08:42:27Z INFO Terminal] READ LINE
+[2022-01-10 08:42:28Z INFO Terminal] Read value: ''
+[2022-01-10 08:42:28Z INFO PromptManager] Falling back to the default: 'Default'
+[2022-01-10 08:42:28Z INFO Terminal] WRITE LINE: 
+[2022-01-10 08:42:28Z INFO ConfigurationManager] Found a self-hosted runner group with id 1 and name Default
+[2022-01-10 08:42:28Z INFO CommandSettings] Flag 'ephemeral': 'False'
+[2022-01-10 08:42:28Z INFO CommandSettings] Arg 'name': ''
+[2022-01-10 08:42:28Z INFO CommandSettings] Flag 'unattended': 'False'
+[2022-01-10 08:42:28Z INFO PromptManager] ReadValue
+[2022-01-10 08:42:28Z INFO Terminal] WRITE: Enter the name of runner: 
+[2022-01-10 08:42:28Z INFO Terminal] WRITE: [press Enter for DESKTOP-LJ550LC] 
+[2022-01-10 08:42:28Z INFO Terminal] READ LINE
+[2022-01-10 08:42:28Z INFO Terminal] Read value: ''
+[2022-01-10 08:42:28Z INFO PromptManager] Falling back to the default: 'DESKTOP-LJ550LC'
+[2022-01-10 08:42:28Z INFO Terminal] WRITE LINE: 
+[2022-01-10 08:42:28Z INFO CommandSettings] Arg 'labels': ''
+[2022-01-10 08:42:28Z INFO CommandSettings] Flag 'unattended': 'False'
+[2022-01-10 08:42:28Z INFO PromptManager] ReadValue
+[2022-01-10 08:42:28Z INFO Terminal] WRITE: This runner will have the following labels: 'self-hosted', 'Windows', 'X64' 
+Enter any additional labels (ex. label-1,label-2): 
+[2022-01-10 08:42:28Z INFO Terminal] WRITE: [press Enter to skip] 
+[2022-01-10 08:42:28Z INFO Terminal] READ LINE
+[2022-01-10 08:42:29Z INFO Terminal] Read value: ''
+[2022-01-10 08:42:29Z INFO Terminal] WRITE LINE: 
+[2022-01-10 08:42:29Z INFO Terminal] WRITE LINE: A runner exists with the same name
+[2022-01-10 08:42:29Z INFO CommandSettings] Flag 'replace': 'False'
+[2022-01-10 08:42:29Z INFO CommandSettings] Flag 'unattended': 'False'
+[2022-01-10 08:42:29Z INFO PromptManager] ReadValue
+[2022-01-10 08:42:29Z INFO Terminal] WRITE: Would you like to replace the existing runner? (Y/N) 
+[2022-01-10 08:42:29Z INFO Terminal] WRITE: [press Enter for N] 
+[2022-01-10 08:42:29Z INFO Terminal] READ LINE
+[2022-01-10 08:42:29Z INFO Terminal] Read value: ''
+[2022-01-10 08:42:29Z INFO PromptManager] Falling back to the default: 'N'
+[2022-01-10 08:42:29Z INFO CommandSettings] Flag 'unattended': 'False'
+[2022-01-10 08:42:29Z INFO CommandSettings] Flag 'ephemeral': 'False'
+[2022-01-10 08:42:29Z INFO CommandSettings] Arg 'name': ''
+[2022-01-10 08:42:29Z INFO CommandSettings] Flag 'unattended': 'False'
+[2022-01-10 08:42:29Z INFO PromptManager] ReadValue
+[2022-01-10 08:42:29Z INFO Terminal] WRITE: Enter the name of runner: 
+[2022-01-10 08:42:29Z INFO Terminal] WRITE: [press Enter for DESKTOP-LJ550LC] 
+[2022-01-10 08:42:29Z INFO Terminal] READ LINE
+[2022-01-10 08:42:30Z INFO Terminal] Read value: ''
+[2022-01-10 08:42:30Z INFO PromptManager] Falling back to the default: 'DESKTOP-LJ550LC'
+[2022-01-10 08:42:30Z INFO Terminal] WRITE LINE: 
+[2022-01-10 08:42:30Z INFO CommandSettings] Arg 'labels': ''
+[2022-01-10 08:42:30Z INFO CommandSettings] Flag 'unattended': 'False'
+[2022-01-10 08:42:30Z INFO PromptManager] ReadValue
+[2022-01-10 08:42:30Z INFO Terminal] WRITE: This runner will have the following labels: 'self-hosted', 'Windows', 'X64' 
+Enter any additional labels (ex. label-1,label-2): 
+[2022-01-10 08:42:30Z INFO Terminal] WRITE: [press Enter to skip] 
+[2022-01-10 08:42:30Z INFO Terminal] READ LINE
+[2022-01-10 08:42:30Z INFO Terminal] Read value: ''
+[2022-01-10 08:42:30Z INFO Terminal] WRITE LINE: 
+[2022-01-10 08:42:30Z INFO Terminal] WRITE LINE: A runner exists with the same name
+[2022-01-10 08:42:30Z INFO CommandSettings] Flag 'replace': 'False'
+[2022-01-10 08:42:30Z INFO CommandSettings] Flag 'unattended': 'False'
+[2022-01-10 08:42:30Z INFO PromptManager] ReadValue
+[2022-01-10 08:42:30Z INFO Terminal] WRITE: Would you like to replace the existing runner? (Y/N) 
+[2022-01-10 08:42:30Z INFO Terminal] WRITE: [press Enter for N] 
+[2022-01-10 08:42:30Z INFO Terminal] READ LINE
+[2022-01-10 08:42:30Z INFO Terminal] Read value: ''
+[2022-01-10 08:42:30Z INFO PromptManager] Falling back to the default: 'N'
+[2022-01-10 08:42:30Z INFO CommandSettings] Flag 'unattended': 'False'
+[2022-01-10 08:42:30Z INFO CommandSettings] Flag 'ephemeral': 'False'
+[2022-01-10 08:42:30Z INFO CommandSettings] Arg 'name': ''
+[2022-01-10 08:42:30Z INFO CommandSettings] Flag 'unattended': 'False'
+[2022-01-10 08:42:30Z INFO PromptManager] ReadValue
+[2022-01-10 08:42:30Z INFO Terminal] WRITE: Enter the name of runner: 
+[2022-01-10 08:42:30Z INFO Terminal] WRITE: [press Enter for DESKTOP-LJ550LC] 
+[2022-01-10 08:42:30Z INFO Terminal] READ LINE
+[2022-01-10 08:42:30Z INFO Terminal] Read value: ''
+[2022-01-10 08:42:30Z INFO PromptManager] Falling back to the default: 'DESKTOP-LJ550LC'
+[2022-01-10 08:42:30Z INFO Terminal] WRITE LINE: 
+[2022-01-10 08:42:30Z INFO CommandSettings] Arg 'labels': ''
+[2022-01-10 08:42:30Z INFO CommandSettings] Flag 'unattended': 'False'
+[2022-01-10 08:42:30Z INFO PromptManager] ReadValue
+[2022-01-10 08:42:30Z INFO Terminal] WRITE: This runner will have the following labels: 'self-hosted', 'Windows', 'X64' 
+Enter any additional labels (ex. label-1,label-2): 
+[2022-01-10 08:42:30Z INFO Terminal] WRITE: [press Enter to skip] 
+[2022-01-10 08:42:30Z INFO Terminal] READ LINE
+[2022-01-10 08:42:31Z INFO Terminal] Read value: ''
+[2022-01-10 08:42:31Z INFO Terminal] WRITE LINE: 
+[2022-01-10 08:42:31Z INFO Terminal] WRITE LINE: A runner exists with the same name
+[2022-01-10 08:42:31Z INFO CommandSettings] Flag 'replace': 'False'
+[2022-01-10 08:42:31Z INFO CommandSettings] Flag 'unattended': 'False'
+[2022-01-10 08:42:31Z INFO PromptManager] ReadValue
+[2022-01-10 08:42:31Z INFO Terminal] WRITE: Would you like to replace the existing runner? (Y/N) 
+[2022-01-10 08:42:31Z INFO Terminal] WRITE: [press Enter for N] 
+[2022-01-10 08:42:31Z INFO Terminal] READ LINE
+[2022-01-10 08:42:33Z INFO Terminal] Read value: ''
+[2022-01-10 08:42:33Z INFO PromptManager] Falling back to the default: 'N'
+[2022-01-10 08:42:33Z INFO CommandSettings] Flag 'unattended': 'False'
+[2022-01-10 08:42:33Z INFO CommandSettings] Flag 'ephemeral': 'False'
+[2022-01-10 08:42:33Z INFO CommandSettings] Arg 'name': ''
+[2022-01-10 08:42:33Z INFO CommandSettings] Flag 'unattended': 'False'
+[2022-01-10 08:42:33Z INFO PromptManager] ReadValue
+[2022-01-10 08:42:33Z INFO Terminal] WRITE: Enter the name of runner: 
+[2022-01-10 08:42:33Z INFO Terminal] WRITE: [press Enter for DESKTOP-LJ550LC] 
+[2022-01-10 08:42:33Z INFO Terminal] READ LINE
+[2022-01-10 08:42:33Z INFO Terminal] Read value: ''
+[2022-01-10 08:42:33Z INFO PromptManager] Falling back to the default: 'DESKTOP-LJ550LC'
+[2022-01-10 08:42:33Z INFO Terminal] WRITE LINE: 
+[2022-01-10 08:42:33Z INFO CommandSettings] Arg 'labels': ''
+[2022-01-10 08:42:33Z INFO CommandSettings] Flag 'unattended': 'False'
+[2022-01-10 08:42:33Z INFO PromptManager] ReadValue
+[2022-01-10 08:42:33Z INFO Terminal] WRITE: This runner will have the following labels: 'self-hosted', 'Windows', 'X64' 
+Enter any additional labels (ex. label-1,label-2): 
+[2022-01-10 08:42:33Z INFO Terminal] WRITE: [press Enter to skip] 
+[2022-01-10 08:42:33Z INFO Terminal] READ LINE
+[2022-01-10 08:42:34Z INFO Terminal] Read value: ''
+[2022-01-10 08:42:34Z INFO Terminal] WRITE LINE: 
+[2022-01-10 08:42:34Z INFO Terminal] WRITE LINE: A runner exists with the same name
+[2022-01-10 08:42:34Z INFO CommandSettings] Flag 'replace': 'False'
+[2022-01-10 08:42:34Z INFO CommandSettings] Flag 'unattended': 'False'
+[2022-01-10 08:42:34Z INFO PromptManager] ReadValue
+[2022-01-10 08:42:34Z INFO Terminal] WRITE: Would you like to replace the existing runner? (Y/N) 
+[2022-01-10 08:42:34Z INFO Terminal] WRITE: [press Enter for N] 
+[2022-01-10 08:42:34Z INFO Terminal] READ LINE
+[2022-01-10 08:42:35Z INFO Terminal] Read value: ''
+[2022-01-10 08:42:35Z INFO PromptManager] Falling back to the default: 'N'
+[2022-01-10 08:42:35Z INFO CommandSettings] Flag 'unattended': 'False'
+[2022-01-10 08:42:35Z INFO CommandSettings] Flag 'ephemeral': 'False'
+[2022-01-10 08:42:35Z INFO CommandSettings] Arg 'name': ''
+[2022-01-10 08:42:35Z INFO CommandSettings] Flag 'unattended': 'False'
+[2022-01-10 08:42:35Z INFO PromptManager] ReadValue
+[2022-01-10 08:42:35Z INFO Terminal] WRITE: Enter the name of runner: 
+[2022-01-10 08:42:35Z INFO Terminal] WRITE: [press Enter for DESKTOP-LJ550LC] 
+[2022-01-10 08:42:35Z INFO Terminal] READ LINE
+[2022-01-10 08:42:38Z INFO Terminal] Read value: ''
+[2022-01-10 08:42:38Z INFO PromptManager] Falling back to the default: 'DESKTOP-LJ550LC'
+[2022-01-10 08:42:38Z INFO Terminal] WRITE LINE: 
+[2022-01-10 08:42:38Z INFO CommandSettings] Arg 'labels': ''
+[2022-01-10 08:42:38Z INFO CommandSettings] Flag 'unattended': 'False'
+[2022-01-10 08:42:38Z INFO PromptManager] ReadValue
+[2022-01-10 08:42:38Z INFO Terminal] WRITE: This runner will have the following labels: 'self-hosted', 'Windows', 'X64' 
+Enter any additional labels (ex. label-1,label-2): 
+[2022-01-10 08:42:38Z INFO Terminal] WRITE: [press Enter to skip] 
+[2022-01-10 08:42:38Z INFO Terminal] READ LINE
+[2022-01-10 08:42:40Z INFO Terminal] Read value: ''
+[2022-01-10 08:42:40Z INFO Terminal] WRITE LINE: 
+[2022-01-10 08:42:40Z INFO Terminal] WRITE LINE: A runner exists with the same name
+[2022-01-10 08:42:40Z INFO CommandSettings] Flag 'replace': 'False'
+[2022-01-10 08:42:40Z INFO CommandSettings] Flag 'unattended': 'False'
+[2022-01-10 08:42:40Z INFO PromptManager] ReadValue
+[2022-01-10 08:42:40Z INFO Terminal] WRITE: Would you like to replace the existing runner? (Y/N) 
+[2022-01-10 08:42:40Z INFO Terminal] WRITE: [press Enter for N] 
+[2022-01-10 08:42:40Z INFO Terminal] READ LINE
+[2022-01-10 08:42:42Z INFO Terminal] Read value: ''
+[2022-01-10 08:42:42Z INFO PromptManager] Falling back to the default: 'N'
+[2022-01-10 08:42:42Z INFO CommandSettings] Flag 'unattended': 'False'
+[2022-01-10 08:42:42Z INFO CommandSettings] Flag 'ephemeral': 'False'
+[2022-01-10 08:42:42Z INFO CommandSettings] Arg 'name': ''
+[2022-01-10 08:42:42Z INFO CommandSettings] Flag 'unattended': 'False'
+[2022-01-10 08:42:42Z INFO PromptManager] ReadValue
+[2022-01-10 08:42:42Z INFO Terminal] WRITE: Enter the name of runner: 
+[2022-01-10 08:42:42Z INFO Terminal] WRITE: [press Enter for DESKTOP-LJ550LC] 
+[2022-01-10 08:42:42Z INFO Terminal] READ LINE
+[2022-01-10 08:42:42Z INFO Terminal] Read value: ''
+[2022-01-10 08:42:42Z INFO PromptManager] Falling back to the default: 'DESKTOP-LJ550LC'
+[2022-01-10 08:42:42Z INFO Terminal] WRITE LINE: 
+[2022-01-10 08:42:42Z INFO CommandSettings] Arg 'labels': ''
+[2022-01-10 08:42:42Z INFO CommandSettings] Flag 'unattended': 'False'
+[2022-01-10 08:42:42Z INFO PromptManager] ReadValue
+[2022-01-10 08:42:42Z INFO Terminal] WRITE: This runner will have the following labels: 'self-hosted', 'Windows', 'X64' 
+Enter any additional labels (ex. label-1,label-2): 
+[2022-01-10 08:42:42Z INFO Terminal] WRITE: [press Enter to skip] 
+[2022-01-10 08:42:42Z INFO Terminal] READ LINE
+[2022-01-10 08:42:43Z INFO Terminal] Read value: ''
+[2022-01-10 08:42:43Z INFO Terminal] WRITE LINE: 
+[2022-01-10 08:42:43Z INFO Terminal] WRITE LINE: A runner exists with the same name
+[2022-01-10 08:42:43Z INFO CommandSettings] Flag 'replace': 'False'
+[2022-01-10 08:42:43Z INFO CommandSettings] Flag 'unattended': 'False'
+[2022-01-10 08:42:43Z INFO PromptManager] ReadValue
+[2022-01-10 08:42:43Z INFO Terminal] WRITE: Would you like to replace the existing runner? (Y/N) 
+[2022-01-10 08:42:43Z INFO Terminal] WRITE: [press Enter for N] 
+[2022-01-10 08:42:43Z INFO Terminal] READ LINE
+[2022-01-10 08:42:44Z INFO Terminal] Read value: ''
+[2022-01-10 08:42:44Z INFO PromptManager] Falling back to the default: 'N'
+[2022-01-10 08:42:44Z INFO CommandSettings] Flag 'unattended': 'False'
+[2022-01-10 08:42:44Z INFO CommandSettings] Flag 'ephemeral': 'False'
+[2022-01-10 08:42:44Z INFO CommandSettings] Arg 'name': ''
+[2022-01-10 08:42:44Z INFO CommandSettings] Flag 'unattended': 'False'
+[2022-01-10 08:42:44Z INFO PromptManager] ReadValue
+[2022-01-10 08:42:44Z INFO Terminal] WRITE: Enter the name of runner: 
+[2022-01-10 08:42:44Z INFO Terminal] WRITE: [press Enter for DESKTOP-LJ550LC] 
+[2022-01-10 08:42:44Z INFO Terminal] READ LINE
+[2022-01-10 08:42:45Z INFO Terminal] Read value: ''
+[2022-01-10 08:42:45Z INFO PromptManager] Falling back to the default: 'DESKTOP-LJ550LC'
+[2022-01-10 08:42:45Z INFO Terminal] WRITE LINE: 
+[2022-01-10 08:42:45Z INFO CommandSettings] Arg 'labels': ''
+[2022-01-10 08:42:45Z INFO CommandSettings] Flag 'unattended': 'False'
+[2022-01-10 08:42:45Z INFO PromptManager] ReadValue
+[2022-01-10 08:42:45Z INFO Terminal] WRITE: This runner will have the following labels: 'self-hosted', 'Windows', 'X64' 
+Enter any additional labels (ex. label-1,label-2): 
+[2022-01-10 08:42:45Z INFO Terminal] WRITE: [press Enter to skip] 
+[2022-01-10 08:42:45Z INFO Terminal] READ LINE
+[2022-01-10 08:42:46Z INFO Terminal] Read value: ''
+[2022-01-10 08:42:46Z INFO Terminal] WRITE LINE: 
+[2022-01-10 08:42:46Z INFO Terminal] WRITE LINE: A runner exists with the same name
+[2022-01-10 08:42:46Z INFO CommandSettings] Flag 'replace': 'False'
+[2022-01-10 08:42:46Z INFO CommandSettings] Flag 'unattended': 'False'
+[2022-01-10 08:42:46Z INFO PromptManager] ReadValue
+[2022-01-10 08:42:46Z INFO Terminal] WRITE: Would you like to replace the existing runner? (Y/N) 
+[2022-01-10 08:42:46Z INFO Terminal] WRITE: [press Enter for N] 
+[2022-01-10 08:42:46Z INFO Terminal] READ LINE
+[2022-01-10 08:42:48Z INFO Terminal] Read value: ''
+[2022-01-10 08:42:48Z INFO PromptManager] Falling back to the default: 'N'
+[2022-01-10 08:42:48Z INFO CommandSettings] Flag 'unattended': 'False'
+[2022-01-10 08:42:48Z INFO CommandSettings] Flag 'ephemeral': 'False'
+[2022-01-10 08:42:48Z INFO CommandSettings] Arg 'name': ''
+[2022-01-10 08:42:48Z INFO CommandSettings] Flag 'unattended': 'False'
+[2022-01-10 08:42:48Z INFO PromptManager] ReadValue
+[2022-01-10 08:42:48Z INFO Terminal] WRITE: Enter the name of runner: 
+[2022-01-10 08:42:48Z INFO Terminal] WRITE: [press Enter for DESKTOP-LJ550LC] 
+[2022-01-10 08:42:48Z INFO Terminal] READ LINE
+[2022-01-10 08:42:50Z INFO Terminal] Read value: ''
+[2022-01-10 08:42:50Z INFO PromptManager] Falling back to the default: 'DESKTOP-LJ550LC'
+[2022-01-10 08:42:50Z INFO Terminal] WRITE LINE: 
+[2022-01-10 08:42:50Z INFO CommandSettings] Arg 'labels': ''
+[2022-01-10 08:42:50Z INFO CommandSettings] Flag 'unattended': 'False'
+[2022-01-10 08:42:50Z INFO PromptManager] ReadValue
+[2022-01-10 08:42:50Z INFO Terminal] WRITE: This runner will have the following labels: 'self-hosted', 'Windows', 'X64' 
+Enter any additional labels (ex. label-1,label-2): 
+[2022-01-10 08:42:50Z INFO Terminal] WRITE: [press Enter to skip] 
+[2022-01-10 08:42:50Z INFO Terminal] READ LINE
+[2022-01-10 08:42:53Z INFO Terminal] Read value: ''
+[2022-01-10 08:42:53Z INFO Terminal] WRITE LINE: 
+[2022-01-10 08:42:53Z INFO Terminal] WRITE LINE: A runner exists with the same name
+[2022-01-10 08:42:53Z INFO CommandSettings] Flag 'replace': 'False'
+[2022-01-10 08:42:53Z INFO CommandSettings] Flag 'unattended': 'False'
+[2022-01-10 08:42:53Z INFO PromptManager] ReadValue
+[2022-01-10 08:42:53Z INFO Terminal] WRITE: Would you like to replace the existing runner? (Y/N) 
+[2022-01-10 08:42:53Z INFO Terminal] WRITE: [press Enter for N] 
+[2022-01-10 08:42:53Z INFO Terminal] READ LINE
+[2022-01-10 08:43:02Z INFO Terminal] Read value: 'Y'
+[2022-01-10 08:43:03Z INFO ConfigurationStore] Saving OAuth credential @ E:\medisage\actions-runner\.credentials
+[2022-01-10 08:43:03Z INFO ConfigurationStore] Credentials Saved.
+[2022-01-10 08:43:03Z INFO ConfigurationStore] HasCredentials()
+[2022-01-10 08:43:03Z INFO ConfigurationStore] stored True
+[2022-01-10 08:43:03Z INFO CredentialManager] GetCredentialProvider
+[2022-01-10 08:43:03Z INFO CredentialManager] Creating type OAuth
+[2022-01-10 08:43:03Z INFO CredentialManager] Creating credential type: OAuth
+[2022-01-10 08:43:03Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file E:\medisage\actions-runner\.credentials_rsaparams
+[2022-01-10 08:43:03Z INFO RunnerServer] Establish connection with 100 seconds timeout.
+[2022-01-10 08:43:03Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2022-01-10 08:43:03Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2022-01-10 08:43:03Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2022-01-10 08:43:03Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2022-01-10 08:43:03Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2022-01-10 08:43:03Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2022-01-10 08:43:03Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2022-01-10 08:43:03Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2022-01-10 08:43:03Z WARN GitHubActionsService] Authentication failed with status code 401.
+Transfer-Encoding: chunked
+WWW-Authenticate: Bearer
+Strict-Transport-Security: max-age=2592000
+X-TFS-ProcessId: 0f467f4c-8830-4cc9-8f30-511cfc8f3bd8
+ActivityId: d09bdf79-2eaa-4244-ba00-6d0ddbb0555c
+X-TFS-Session: 8dbd5d98-dc89-46e4-985c-2842db490af0
+X-VSS-E2EID: 2c183f78-7a4c-4257-820c-810f1b72dc9f
+X-VSS-SenderDeploymentId: 2c974d96-2c30-cef5-eff2-3e0511a903a5
+X-TFS-ServiceError: The+user+%27System%3aPublicAccess%3baaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa%27+is+not+authorized+to+access+this+resource.
+X-VSS-S2STargetService: 0000005A-0000-8888-8000-000000000000/visualstudio.com
+X-Cache: CONFIG_NOCACHE
+X-MSEdge-Ref: Ref A: A87C877A50DA4BEF9F52420828635C83 Ref B: BOM02EDGE0611 Ref C: 2022-01-10T08:43:04Z
+Date: Mon, 10 Jan 2022 08:43:04 GMT
+
+[2022-01-10 08:43:03Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file E:\medisage\actions-runner\.credentials_rsaparams
+[2022-01-10 08:43:03Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file E:\medisage\actions-runner\.credentials_rsaparams
+[2022-01-10 08:43:04Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2022-01-10 08:43:04Z INFO CommandSettings] Arg 'work': ''
+[2022-01-10 08:43:04Z INFO CommandSettings] Flag 'unattended': 'False'
+[2022-01-10 08:43:04Z INFO PromptManager] ReadValue
+[2022-01-10 08:43:04Z INFO Terminal] WRITE: Enter name of work folder: 
+[2022-01-10 08:43:04Z INFO Terminal] WRITE: [press Enter for _work] 
+[2022-01-10 08:43:04Z INFO Terminal] READ LINE
+[2022-01-10 08:43:07Z INFO Terminal] Read value: ''
+[2022-01-10 08:43:07Z INFO PromptManager] Falling back to the default: '_work'
+[2022-01-10 08:43:07Z INFO ConfigurationStore] Saving runner settings.
+[2022-01-10 08:43:07Z INFO ConfigurationStore] Settings Saved.
+[2022-01-10 08:43:07Z INFO Terminal] WRITE LINE: 
+[2022-01-10 08:43:07Z INFO Terminal] WRITE LINE: 
+[2022-01-10 08:43:07Z INFO CommandSettings] Flag 'runasservice': 'False'
+[2022-01-10 08:43:07Z INFO CommandSettings] Flag 'unattended': 'False'
+[2022-01-10 08:43:07Z INFO PromptManager] ReadValue
+[2022-01-10 08:43:07Z INFO Terminal] WRITE: Would you like to run the runner as service? (Y/N) 
+[2022-01-10 08:43:07Z INFO Terminal] WRITE: [press Enter for N] 
+[2022-01-10 08:43:07Z INFO Terminal] READ LINE
+[2022-01-10 08:43:10Z INFO Terminal] Read value: ''
+[2022-01-10 08:43:10Z INFO PromptManager] Falling back to the default: 'N'
+[2022-01-10 08:43:10Z INFO Listener] Runner execution has finished with return code 0

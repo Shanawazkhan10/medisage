@@ -1,0 +1,12 @@
+﻿{
+  "repositoryName": "Shanawazkhan10/medisage",
+  "pipelineDirectory": "medisage",
+  "workspaceDirectory": "medisage\\medisage",
+  "repositories": {
+    "Shanawazkhan10/medisage": {
+      "repositoryPath": "medisage\\medisage",
+      "lastRunOn": "01/10/2022 14:14:09 +05:30"
+    }
+  },
+  "lastRunOn": "01/10/2022 14:14:09 +05:30"
+}

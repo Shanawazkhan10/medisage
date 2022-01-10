@@ -1,0 +1,3335 @@
+[2022-01-10 08:44:08Z INFO HostContext] No proxy settings were found based on environmental variables (http_proxy/https_proxy/HTTP_PROXY/HTTPS_PROXY)
+[2022-01-10 08:44:08Z INFO HostContext] Well known directory 'Bin': 'E:\medisage\actions-runner\bin'
+[2022-01-10 08:44:08Z INFO HostContext] Well known directory 'Root': 'E:\medisage\actions-runner'
+[2022-01-10 08:44:08Z INFO HostContext] Well known config file 'Credentials': 'E:\medisage\actions-runner\.credentials'
+[2022-01-10 08:44:08Z INFO HostContext] Well known directory 'Bin': 'E:\medisage\actions-runner\bin'
+[2022-01-10 08:44:08Z INFO HostContext] Well known directory 'Root': 'E:\medisage\actions-runner'
+[2022-01-10 08:44:08Z INFO HostContext] Well known config file 'Runner': 'E:\medisage\actions-runner\.runner'
+[2022-01-10 08:44:08Z INFO Worker] Version: 2.285.1
+[2022-01-10 08:44:08Z INFO Worker] Commit: 50afba61b40932c1084e31b5e9e7f5af325cc2ac
+[2022-01-10 08:44:08Z INFO Worker] Culture: en-US
+[2022-01-10 08:44:08Z INFO Worker] UI Culture: en-US
+[2022-01-10 08:44:08Z INFO Worker] Waiting to receive the job message from the channel.
+[2022-01-10 08:44:08Z INFO ProcessChannel] Receiving message of length 20614, with hash 'd50d3d4110b2b52dc373944d2cf28bde587bb10c082284fd4d523794b99af1b4'
+[2022-01-10 08:44:08Z INFO Worker] Message received.
+[2022-01-10 08:44:08Z INFO Worker] Job message:
+ {
+  "fileTable": [
+    ".github/workflows/react.yml"
+  ],
+  "mask": [
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    }
+  ],
+  "steps": [
+    {
+      "type": "action",
+      "reference": {
+        "type": "repository",
+        "name": "actions/checkout",
+        "ref": "v2",
+        "repositoryType": "GitHub",
+        "path": ""
+      },
+      "contextName": "__actions_checkout",
+      "condition": "success()",
+      "id": "6e7a0969-0c16-51a0-2d7e-99f4c766d063",
+      "name": "__actions_checkout"
+    },
+    {
+      "type": "action",
+      "reference": {
+        "type": "repository",
+        "name": "actions/setup-node",
+        "ref": "v2",
+        "repositoryType": "GitHub",
+        "path": ""
+      },
+      "displayNameToken": {
+        "type": 3,
+        "file": 1,
+        "line": 21,
+        "col": 15,
+        "expr": "format('Use Node.js {0}', matrix.node-version)"
+      },
+      "contextName": "__actions_setup-node",
+      "inputs": {
+        "type": 2,
+        "file": 1,
+        "line": 24,
+        "col": 11,
+        "map": [
+          {
+            "key": {
+              "type": 0,
+              "file": 1,
+              "line": 24,
+              "col": 11,
+              "lit": "node-version"
+            },
+            "value": {
+              "type": 3,
+              "file": 1,
+              "line": 24,
+              "col": 25,
+              "expr": "matrix.node-version"
+            }
+          },
+          {
+            "key": {
+              "type": 0,
+              "file": 1,
+              "line": 25,
+              "col": 11,
+              "lit": "cache"
+            },
+            "value": {
+              "type": 0,
+              "file": 1,
+              "line": 25,
+              "col": 18,
+              "lit": "npm"
+            }
+          }
+        ]
+      },
+      "condition": "success()",
+      "id": "f73c4d64-aa16-5fdd-77c5-d1a58e6d15f1",
+      "name": "__actions_setup-node"
+    },
+    {
+      "type": "action",
+      "reference": {
+        "type": "script"
+      },
+      "contextName": "__run",
+      "inputs": {
+        "type": 2,
+        "map": [
+          {
+            "key": "script",
+            "value": {
+              "type": 0,
+              "file": 1,
+              "line": 26,
+              "col": 14,
+              "lit": "npm i"
+            }
+          }
+        ]
+      },
+      "condition": "success()",
+      "id": "e2375f30-9289-5e9b-27ef-8ad2cb6853c8",
+      "name": "__run"
+    },
+    {
+      "type": "action",
+      "reference": {
+        "type": "script"
+      },
+      "contextName": "__run_2",
+      "inputs": {
+        "type": 2,
+        "map": [
+          {
+            "key": "script",
+            "value": {
+              "type": 0,
+              "file": 1,
+              "line": 27,
+              "col": 14,
+              "lit": "npm test"
+            }
+          }
+        ]
+      },
+      "condition": "success()",
+      "id": "7fb1390b-d4d4-52b4-d892-c805ca5826ad",
+      "name": "__run_2"
+    },
+    {
+      "type": "action",
+      "reference": {
+        "type": "script"
+      },
+      "contextName": "__run_3",
+      "inputs": {
+        "type": 2,
+        "map": [
+          {
+            "key": "script",
+            "value": {
+              "type": 0,
+              "file": 1,
+              "line": 28,
+              "col": 14,
+              "lit": "npm run build"
+            }
+          }
+        ]
+      },
+      "condition": "success()",
+      "id": "e4358342-6308-5b8e-4026-990462be65bf",
+      "name": "__run_3"
+    }
+  ],
+  "variables": {
+    "system.isScheduled": {
+      "value": "False"
+    },
+    "system.servertype": {
+      "value": "Hosted"
+    },
+    "system.culture": {
+      "value": "en-US"
+    },
+    "system.pipelineStartTime": {
+      "value": "2022-01-10 08:44:06+00:00"
+    },
+    "system.runner.lowdiskspacethreshold": {
+      "value": "100"
+    },
+    "DistributedTask.NewActionMetadata": {
+      "value": "true"
+    },
+    "DistributedTask.EnableCompositeActions": {
+      "value": "true"
+    },
+    "DistributedTask.EnhancedAnnotations": {
+      "value": "true"
+    },
+    "system.teamProjectId": {
+      "value": "00000000-0000-0000-0000-000000000000"
+    },
+    "build.buildId": {
+      "value": "6"
+    },
+    "build.containerId": {
+      "value": "11261880"
+    },
+    "system.workflowFilePath": {
+      "value": ".github/workflows/react.yml"
+    },
+    "system.phaseDisplayName": {
+      "value": "build"
+    },
+    "system.phaseId": {
+      "value": "6884a131-87da-5381-61f3-d7acc3b91d76"
+    },
+    "system.phaseName": {
+      "value": "build"
+    },
+    "system.phaseAttempt": {
+      "value": "1"
+    },
+    "system.jobIdentifier": {
+      "value": "build._14_x"
+    },
+    "system.jobAttempt": {
+      "value": "1"
+    },
+    "System.JobPositionInPhase": {
+      "value": "1"
+    },
+    "System.TotalJobsInPhase": {
+      "value": "1"
+    },
+    "system.github.job": {
+      "value": "build"
+    },
+    "system.jobDisplayName": {
+      "value": "build (14.x)"
+    },
+    "system.jobId": {
+      "value": "006c7e6f-00a1-57ff-4d9c-5871960fc9e4"
+    },
+    "system.jobName": {
+      "value": "_14_x"
+    },
+    "system.github.token.permissions": {
+      "value": "{\"Actions\":\"write\",\"Checks\":\"write\",\"Contents\":\"write\",\"Deployments\":\"write\",\"Discussions\":\"write\",\"Issues\":\"write\",\"Metadata\":\"read\",\"Packages\":\"write\",\"Pages\":\"write\",\"PullRequests\":\"write\",\"RepositoryProjects\":\"write\",\"SecurityEvents\":\"write\",\"Statuses\":\"write\"}"
+    },
+    "system.github.token": {
+      "value": "***",
+      "isSecret": true
+    },
+    "system.runnerGroupName": {
+      "value": "Default"
+    }
+  },
+  "messageType": "PipelineAgentJobRequest",
+  "plan": {
+    "scopeIdentifier": "00000000-0000-0000-0000-000000000000",
+    "planType": "Actions",
+    "version": 21,
+    "planId": "cb6cb3f8-b19f-40cd-b672-9776791f76fe",
+    "planGroup": "Actions:00000000-0000-0000-0000-000000000000:1",
+    "artifactUri": "vstfs:///Build/Build/6",
+    "artifactLocation": null,
+    "definition": {
+      "_links": {},
+      "id": 3,
+      "name": "medisage"
+    },
+    "owner": {
+      "_links": {},
+      "id": 3,
+      "name": "Shanawazkhan10"
+    }
+  },
+  "timeline": {
+    "id": "cb6cb3f8-b19f-40cd-b672-9776791f76fe",
+    "changeId": 0,
+    "location": null
+  },
+  "jobId": "006c7e6f-00a1-57ff-4d9c-5871960fc9e4",
+  "jobDisplayName": "build (14.x)",
+  "jobName": "_14_x",
+  "requestId": 6,
+  "lockedUntil": "0001-01-01T00:00:00",
+  "resources": {
+    "endpoints": [
+      {
+        "data": {
+          "ServerId": "79fab59b-849d-4187-983c-fa2428c54e11",
+          "ServerName": "RTMhic4U29snVXmAo0mwIotqSmGNdtaCPwAMJPFX0ySye9wFp5",
+          "CacheServerUrl": "https://artifactcache.actions.githubusercontent.com/RTMhic4U29snVXmAo0mwIotqSmGNdtaCPwAMJPFX0ySye9wFp5/"
+        },
+        "name": "SystemVssConnection",
+        "url": "https://pipelines.actions.githubusercontent.com/RTMhic4U29snVXmAo0mwIotqSmGNdtaCPwAMJPFX0ySye9wFp5/",
+        "authorization": {
+          "parameters": {
+            "AccessToken": ***
+          },
+          "scheme": "OAuth"
+        },
+        "isShared": false,
+        "isReady": true
+      }
+    ]
+  },
+  "contextData": {
+    "github": {
+      "t": 2,
+      "d": [
+        {
+          "k": "ref",
+          "v": "refs/heads/master"
+        },
+        {
+          "k": "sha",
+          "v": "5c0d224f065b1d7ab3b17df5ee99228c872d6cb6"
+        },
+        {
+          "k": "repository",
+          "v": "Shanawazkhan10/medisage"
+        },
+        {
+          "k": "repository_owner",
+          "v": "Shanawazkhan10"
+        },
+        {
+          "k": "repositoryUrl",
+          "v": "git://github.com/Shanawazkhan10/medisage.git"
+        },
+        {
+          "k": "run_id",
+          "v": "1676458101"
+        },
+        {
+          "k": "run_number",
+          "v": "2"
+        },
+        {
+          "k": "retention_days",
+          "v": "90"
+        },
+        {
+          "k": "run_attempt",
+          "v": "2"
+        },
+        {
+          "k": "actor",
+          "v": "Shanawazkhan10"
+        },
+        {
+          "k": "workflow",
+          "v": "React CI/CD"
+        },
+        {
+          "k": "head_ref",
+          "v": ""
+        },
+        {
+          "k": "base_ref",
+          "v": ""
+        },
+        {
+          "k": "event_name",
+          "v": "push"
+        },
+        {
+          "k": "event",
+          "v": {
+            "t": 2,
+            "d": [
+              {
+                "k": "after",
+                "v": "5c0d224f065b1d7ab3b17df5ee99228c872d6cb6"
+              },
+              {
+                "k": "base_ref",
+                "v": null
+              },
+              {
+                "k": "before",
+                "v": "7e59ba015b914b001cb7fcca7a5a590290f8644a"
+              },
+              {
+                "k": "commits",
+                "v": {
+                  "t": 1,
+                  "a": [
+                    {
+                      "t": 2,
+                      "d": [
+                        {
+                          "k": "author",
+                          "v": {
+                            "t": 2,
+                            "d": [
+                              {
+                                "k": "email",
+                                "v": "shanawaz.khan@somaiya.edu"
+                              },
+                              {
+                                "k": "name",
+                                "v": "shanawaz khan"
+                              },
+                              {
+                                "k": "username",
+                                "v": "Shanawazkhan10"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "k": "committer",
+                          "v": {
+                            "t": 2,
+                            "d": [
+                              {
+                                "k": "email",
+                                "v": "shanawaz.khan@somaiya.edu"
+                              },
+                              {
+                                "k": "name",
+                                "v": "shanawaz khan"
+                              },
+                              {
+                                "k": "username",
+                                "v": "Shanawazkhan10"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "k": "distinct",
+                          "v": true
+                        },
+                        {
+                          "k": "id",
+                          "v": "5c0d224f065b1d7ab3b17df5ee99228c872d6cb6"
+                        },
+                        {
+                          "k": "message",
+                          "v": "git action"
+                        },
+                        {
+                          "k": "timestamp",
+                          "v": "2022-01-10T13:58:16+05:30"
+                        },
+                        {
+                          "k": "tree_id",
+                          "v": "eff40378fede7177dfe34782ace79b13b1663eec"
+                        },
+                        {
+                          "k": "url",
+                          "v": "https://github.com/Shanawazkhan10/medisage/commit/5c0d224f065b1d7ab3b17df5ee99228c872d6cb6"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "k": "compare",
+                "v": "https://github.com/Shanawazkhan10/medisage/compare/7e59ba015b91...5c0d224f065b"
+              },
+              {
+                "k": "created",
+                "v": false
+              },
+              {
+                "k": "deleted",
+                "v": false
+              },
+              {
+                "k": "forced",
+                "v": false
+              },
+              {
+                "k": "head_commit",
+                "v": {
+                  "t": 2,
+                  "d": [
+                    {
+                      "k": "author",
+                      "v": {
+                        "t": 2,
+                        "d": [
+                          {
+                            "k": "email",
+                            "v": "shanawaz.khan@somaiya.edu"
+                          },
+                          {
+                            "k": "name",
+                            "v": "shanawaz khan"
+                          },
+                          {
+                            "k": "username",
+                            "v": "Shanawazkhan10"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "k": "committer",
+                      "v": {
+                        "t": 2,
+                        "d": [
+                          {
+                            "k": "email",
+                            "v": "shanawaz.khan@somaiya.edu"
+                          },
+                          {
+                            "k": "name",
+                            "v": "shanawaz khan"
+                          },
+                          {
+                            "k": "username",
+                            "v": "Shanawazkhan10"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "k": "distinct",
+                      "v": true
+                    },
+                    {
+                      "k": "id",
+                      "v": "5c0d224f065b1d7ab3b17df5ee99228c872d6cb6"
+                    },
+                    {
+                      "k": "message",
+                      "v": "git action"
+                    },
+                    {
+                      "k": "timestamp",
+                      "v": "2022-01-10T13:58:16+05:30"
+                    },
+                    {
+                      "k": "tree_id",
+                      "v": "eff40378fede7177dfe34782ace79b13b1663eec"
+                    },
+                    {
+                      "k": "url",
+                      "v": "https://github.com/Shanawazkhan10/medisage/commit/5c0d224f065b1d7ab3b17df5ee99228c872d6cb6"
+                    }
+                  ]
+                }
+              },
+              {
+                "k": "pusher",
+                "v": {
+                  "t": 2,
+                  "d": [
+                    {
+                      "k": "email",
+                      "v": "59357994+Shanawazkhan10@users.noreply.github.com"
+                    },
+                    {
+                      "k": "name",
+                      "v": "Shanawazkhan10"
+                    }
+                  ]
+                }
+              },
+              {
+                "k": "ref",
+                "v": "refs/heads/master"
+              },
+              {
+                "k": "repository",
+                "v": {
+                  "t": 2,
+                  "d": [
+                    {
+                      "k": "allow_forking",
+                      "v": true
+                    },
+                    {
+                      "k": "archive_url",
+                      "v": "https://api.github.com/repos/Shanawazkhan10/medisage/{archive_format}{/ref}"
+                    },
+                    {
+                      "k": "archived",
+                      "v": false
+                    },
+                    {
+                      "k": "assignees_url",
+                      "v": "https://api.github.com/repos/Shanawazkhan10/medisage/assignees{/user}"
+                    },
+                    {
+                      "k": "blobs_url",
+                      "v": "https://api.github.com/repos/Shanawazkhan10/medisage/git/blobs{/sha}"
+                    },
+                    {
+                      "k": "branches_url",
+                      "v": "https://api.github.com/repos/Shanawazkhan10/medisage/branches{/branch}"
+                    },
+                    {
+                      "k": "clone_url",
+                      "v": "https://github.com/Shanawazkhan10/medisage.git"
+                    },
+                    {
+                      "k": "collaborators_url",
+                      "v": "https://api.github.com/repos/Shanawazkhan10/medisage/collaborators{/collaborator}"
+                    },
+                    {
+                      "k": "comments_url",
+                      "v": "https://api.github.com/repos/Shanawazkhan10/medisage/comments{/number}"
+                    },
+                    {
+                      "k": "commits_url",
+                      "v": "https://api.github.com/repos/Shanawazkhan10/medisage/commits{/sha}"
+                    },
+                    {
+                      "k": "compare_url",
+                      "v": "https://api.github.com/repos/Shanawazkhan10/medisage/compare/{base}...{head}"
+                    },
+                    {
+                      "k": "contents_url",
+                      "v": "https://api.github.com/repos/Shanawazkhan10/medisage/contents/{+path}"
+                    },
+                    {
+                      "k": "contributors_url",
+                      "v": "https://api.github.com/repos/Shanawazkhan10/medisage/contributors"
+                    },
+                    {
+                      "k": "created_at",
+                      "v": 1640865722.0
+                    },
+                    {
+                      "k": "default_branch",
+                      "v": "master"
+                    },
+                    {
+                      "k": "deployments_url",
+                      "v": "https://api.github.com/repos/Shanawazkhan10/medisage/deployments"
+                    },
+                    {
+                      "k": "description",
+                      "v": null
+                    },
+                    {
+                      "k": "disabled",
+                      "v": false
+                    },
+                    {
+                      "k": "downloads_url",
+                      "v": "https://api.github.com/repos/Shanawazkhan10/medisage/downloads"
+                    },
+                    {
+                      "k": "events_url",
+                      "v": "https://api.github.com/repos/Shanawazkhan10/medisage/events"
+                    },
+                    {
+                      "k": "fork",
+                      "v": false
+                    },
+                    {
+                      "k": "forks",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "forks_count",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "forks_url",
+                      "v": "https://api.github.com/repos/Shanawazkhan10/medisage/forks"
+                    },
+                    {
+                      "k": "full_name",
+                      "v": "Shanawazkhan10/medisage"
+                    },
+                    {
+                      "k": "git_commits_url",
+                      "v": "https://api.github.com/repos/Shanawazkhan10/medisage/git/commits{/sha}"
+                    },
+                    {
+                      "k": "git_refs_url",
+                      "v": "https://api.github.com/repos/Shanawazkhan10/medisage/git/refs{/sha}"
+                    },
+                    {
+                      "k": "git_tags_url",
+                      "v": "https://api.github.com/repos/Shanawazkhan10/medisage/git/tags{/sha}"
+                    },
+                    {
+                      "k": "git_url",
+                      "v": "git://github.com/Shanawazkhan10/medisage.git"
+                    },
+                    {
+                      "k": "has_downloads",
+                      "v": true
+                    },
+                    {
+                      "k": "has_issues",
+                      "v": true
+                    },
+                    {
+                      "k": "has_pages",
+                      "v": false
+                    },
+                    {
+                      "k": "has_projects",
+                      "v": true
+                    },
+                    {
+                      "k": "has_wiki",
+                      "v": true
+                    },
+                    {
+                      "k": "homepage",
+                      "v": null
+                    },
+                    {
+                      "k": "hooks_url",
+                      "v": "https://api.github.com/repos/Shanawazkhan10/medisage/hooks"
+                    },
+                    {
+                      "k": "html_url",
+                      "v": "https://github.com/Shanawazkhan10/medisage"
+                    },
+                    {
+                      "k": "id",
+                      "v": 443062452.0
+                    },
+                    {
+                      "k": "is_template",
+                      "v": false
+                    },
+                    {
+                      "k": "issue_comment_url",
+                      "v": "https://api.github.com/repos/Shanawazkhan10/medisage/issues/comments{/number}"
+                    },
+                    {
+                      "k": "issue_events_url",
+                      "v": "https://api.github.com/repos/Shanawazkhan10/medisage/issues/events{/number}"
+                    },
+                    {
+                      "k": "issues_url",
+                      "v": "https://api.github.com/repos/Shanawazkhan10/medisage/issues{/number}"
+                    },
+                    {
+                      "k": "keys_url",
+                      "v": "https://api.github.com/repos/Shanawazkhan10/medisage/keys{/key_id}"
+                    },
+                    {
+                      "k": "labels_url",
+                      "v": "https://api.github.com/repos/Shanawazkhan10/medisage/labels{/name}"
+                    },
+                    {
+                      "k": "language",
+                      "v": "JavaScript"
+                    },
+                    {
+                      "k": "languages_url",
+                      "v": "https://api.github.com/repos/Shanawazkhan10/medisage/languages"
+                    },
+                    {
+                      "k": "license",
+                      "v": null
+                    },
+                    {
+                      "k": "master_branch",
+                      "v": "master"
+                    },
+                    {
+                      "k": "merges_url",
+                      "v": "https://api.github.com/repos/Shanawazkhan10/medisage/merges"
+                    },
+                    {
+                      "k": "milestones_url",
+                      "v": "https://api.github.com/repos/Shanawazkhan10/medisage/milestones{/number}"
+                    },
+                    {
+                      "k": "mirror_url",
+                      "v": null
+                    },
+                    {
+                      "k": "name",
+                      "v": "medisage"
+                    },
+                    {
+                      "k": "node_id",
+                      "v": "R_kgDOGmiYtA"
+                    },
+                    {
+                      "k": "notifications_url",
+                      "v": "https://api.github.com/repos/Shanawazkhan10/medisage/notifications{?since,all,participating}"
+                    },
+                    {
+                      "k": "open_issues",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "open_issues_count",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "owner",
+                      "v": {
+                        "t": 2,
+                        "d": [
+                          {
+                            "k": "avatar_url",
+                            "v": "https://avatars.githubusercontent.com/u/59357994?v=4"
+                          },
+                          {
+                            "k": "email",
+                            "v": "59357994+Shanawazkhan10@users.noreply.github.com"
+                          },
+                          {
+                            "k": "events_url",
+                            "v": "https://api.github.com/users/Shanawazkhan10/events{/privacy}"
+                          },
+                          {
+                            "k": "followers_url",
+                            "v": "https://api.github.com/users/Shanawazkhan10/followers"
+                          },
+                          {
+                            "k": "following_url",
+                            "v": "https://api.github.com/users/Shanawazkhan10/following{/other_user}"
+                          },
+                          {
+                            "k": "gists_url",
+                            "v": "https://api.github.com/users/Shanawazkhan10/gists{/gist_id}"
+                          },
+                          {
+                            "k": "gravatar_id",
+                            "v": ""
+                          },
+                          {
+                            "k": "html_url",
+                            "v": "https://github.com/Shanawazkhan10"
+                          },
+                          {
+                            "k": "id",
+                            "v": 59357994.0
+                          },
+                          {
+                            "k": "login",
+                            "v": "Shanawazkhan10"
+                          },
+                          {
+                            "k": "name",
+                            "v": "Shanawazkhan10"
+                          },
+                          {
+                            "k": "node_id",
+                            "v": "MDQ6VXNlcjU5MzU3OTk0"
+                          },
+                          {
+                            "k": "organizations_url",
+                            "v": "https://api.github.com/users/Shanawazkhan10/orgs"
+                          },
+                          {
+                            "k": "received_events_url",
+                            "v": "https://api.github.com/users/Shanawazkhan10/received_events"
+                          },
+                          {
+                            "k": "repos_url",
+                            "v": "https://api.github.com/users/Shanawazkhan10/repos"
+                          },
+                          {
+                            "k": "site_admin",
+                            "v": false
+                          },
+                          {
+                            "k": "starred_url",
+                            "v": "https://api.github.com/users/Shanawazkhan10/starred{/owner}{/repo}"
+                          },
+                          {
+                            "k": "subscriptions_url",
+                            "v": "https://api.github.com/users/Shanawazkhan10/subscriptions"
+                          },
+                          {
+                            "k": "type",
+                            "v": "User"
+                          },
+                          {
+                            "k": "url",
+                            "v": "https://api.github.com/users/Shanawazkhan10"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "k": "private",
+                      "v": false
+                    },
+                    {
+                      "k": "pulls_url",
+                      "v": "https://api.github.com/repos/Shanawazkhan10/medisage/pulls{/number}"
+                    },
+                    {
+                      "k": "pushed_at",
+                      "v": 1641803308.0
+                    },
+                    {
+                      "k": "releases_url",
+                      "v": "https://api.github.com/repos/Shanawazkhan10/medisage/releases{/id}"
+                    },
+                    {
+                      "k": "size",
+                      "v": 1555.0
+                    },
+                    {
+                      "k": "ssh_url",
+                      "v": "git@github.com:Shanawazkhan10/medisage.git"
+                    },
+                    {
+                      "k": "stargazers",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "stargazers_count",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "stargazers_url",
+                      "v": "https://api.github.com/repos/Shanawazkhan10/medisage/stargazers"
+                    },
+                    {
+                      "k": "statuses_url",
+                      "v": "https://api.github.com/repos/Shanawazkhan10/medisage/statuses/{sha}"
+                    },
+                    {
+                      "k": "subscribers_url",
+                      "v": "https://api.github.com/repos/Shanawazkhan10/medisage/subscribers"
+                    },
+                    {
+                      "k": "subscription_url",
+                      "v": "https://api.github.com/repos/Shanawazkhan10/medisage/subscription"
+                    },
+                    {
+                      "k": "svn_url",
+                      "v": "https://github.com/Shanawazkhan10/medisage"
+                    },
+                    {
+                      "k": "tags_url",
+                      "v": "https://api.github.com/repos/Shanawazkhan10/medisage/tags"
+                    },
+                    {
+                      "k": "teams_url",
+                      "v": "https://api.github.com/repos/Shanawazkhan10/medisage/teams"
+                    },
+                    {
+                      "k": "topics",
+                      "v": {
+                        "t": 1
+                      }
+                    },
+                    {
+                      "k": "trees_url",
+                      "v": "https://api.github.com/repos/Shanawazkhan10/medisage/git/trees{/sha}"
+                    },
+                    {
+                      "k": "updated_at",
+                      "v": "2022-01-10T08:03:07Z"
+                    },
+                    {
+                      "k": "url",
+                      "v": "https://github.com/Shanawazkhan10/medisage"
+                    },
+                    {
+                      "k": "visibility",
+                      "v": "public"
+                    },
+                    {
+                      "k": "watchers",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "watchers_count",
+                      "v": 0.0
+                    }
+                  ]
+                }
+              },
+              {
+                "k": "sender",
+                "v": {
+                  "t": 2,
+                  "d": [
+                    {
+                      "k": "avatar_url",
+                      "v": "https://avatars.githubusercontent.com/u/59357994?v=4"
+                    },
+                    {
+                      "k": "events_url",
+                      "v": "https://api.github.com/users/Shanawazkhan10/events{/privacy}"
+                    },
+                    {
+                      "k": "followers_url",
+                      "v": "https://api.github.com/users/Shanawazkhan10/followers"
+                    },
+                    {
+                      "k": "following_url",
+                      "v": "https://api.github.com/users/Shanawazkhan10/following{/other_user}"
+                    },
+                    {
+                      "k": "gists_url",
+                      "v": "https://api.github.com/users/Shanawazkhan10/gists{/gist_id}"
+                    },
+                    {
+                      "k": "gravatar_id",
+                      "v": ""
+                    },
+                    {
+                      "k": "html_url",
+                      "v": "https://github.com/Shanawazkhan10"
+                    },
+                    {
+                      "k": "id",
+                      "v": 59357994.0
+                    },
+                    {
+                      "k": "login",
+                      "v": "Shanawazkhan10"
+                    },
+                    {
+                      "k": "node_id",
+                      "v": "MDQ6VXNlcjU5MzU3OTk0"
+                    },
+                    {
+                      "k": "organizations_url",
+                      "v": "https://api.github.com/users/Shanawazkhan10/orgs"
+                    },
+                    {
+                      "k": "received_events_url",
+                      "v": "https://api.github.com/users/Shanawazkhan10/received_events"
+                    },
+                    {
+                      "k": "repos_url",
+                      "v": "https://api.github.com/users/Shanawazkhan10/repos"
+                    },
+                    {
+                      "k": "site_admin",
+                      "v": false
+                    },
+                    {
+                      "k": "starred_url",
+                      "v": "https://api.github.com/users/Shanawazkhan10/starred{/owner}{/repo}"
+                    },
+                    {
+                      "k": "subscriptions_url",
+                      "v": "https://api.github.com/users/Shanawazkhan10/subscriptions"
+                    },
+                    {
+                      "k": "type",
+                      "v": "User"
+                    },
+                    {
+                      "k": "url",
+                      "v": "https://api.github.com/users/Shanawazkhan10"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "k": "server_url",
+          "v": "https://github.com"
+        },
+        {
+          "k": "api_url",
+          "v": "https://api.github.com"
+        },
+        {
+          "k": "graphql_url",
+          "v": "https://api.github.com/graphql"
+        },
+        {
+          "k": "ref_name",
+          "v": "master"
+        },
+        {
+          "k": "ref_protected",
+          "v": false
+        },
+        {
+          "k": "ref_type",
+          "v": "branch"
+        },
+        {
+          "k": "secret_source",
+          "v": "Actions"
+        }
+      ]
+    },
+    "needs": {
+      "t": 2
+    },
+    "inputs": null,
+    "matrix": {
+      "t": 2,
+      "d": [
+        {
+          "k": "node-version",
+          "v": "14.x"
+        }
+      ]
+    },
+    "strategy": {
+      "t": 2,
+      "d": [
+        {
+          "k": "fail-fast",
+          "v": true
+        },
+        {
+          "k": "job-index",
+          "v": 0.0
+        },
+        {
+          "k": "job-total",
+          "v": 1.0
+        },
+        {
+          "k": "max-parallel",
+          "v": 1.0
+        }
+      ]
+    }
+  }
+}
+[2022-01-10 08:44:08Z INFO JobRunner] Job ID 006c7e6f-00a1-57ff-4d9c-5871960fc9e4
+[2022-01-10 08:44:08Z INFO JobRunner] Creating job server with URL: https://pipelines.actions.githubusercontent.com/RTMhic4U29snVXmAo0mwIotqSmGNdtaCPwAMJPFX0ySye9wFp5/
+[2022-01-10 08:44:08Z INFO ConfigurationStore] currentAssemblyLocation: E:\medisage\actions-runner\bin\Runner.Worker.dll
+[2022-01-10 08:44:08Z INFO HostContext] Well known directory 'Bin': 'E:\medisage\actions-runner\bin'
+[2022-01-10 08:44:08Z INFO ConfigurationStore] binPath: E:\medisage\actions-runner\bin
+[2022-01-10 08:44:08Z INFO HostContext] Well known directory 'Bin': 'E:\medisage\actions-runner\bin'
+[2022-01-10 08:44:08Z INFO HostContext] Well known directory 'Root': 'E:\medisage\actions-runner'
+[2022-01-10 08:44:08Z INFO ConfigurationStore] RootFolder: E:\medisage\actions-runner
+[2022-01-10 08:44:08Z INFO HostContext] Well known directory 'Bin': 'E:\medisage\actions-runner\bin'
+[2022-01-10 08:44:08Z INFO HostContext] Well known directory 'Root': 'E:\medisage\actions-runner'
+[2022-01-10 08:44:08Z INFO HostContext] Well known config file 'Runner': 'E:\medisage\actions-runner\.runner'
+[2022-01-10 08:44:08Z INFO ConfigurationStore] ConfigFilePath: E:\medisage\actions-runner\.runner
+[2022-01-10 08:44:08Z INFO HostContext] Well known directory 'Bin': 'E:\medisage\actions-runner\bin'
+[2022-01-10 08:44:08Z INFO HostContext] Well known directory 'Root': 'E:\medisage\actions-runner'
+[2022-01-10 08:44:08Z INFO HostContext] Well known config file 'Credentials': 'E:\medisage\actions-runner\.credentials'
+[2022-01-10 08:44:08Z INFO ConfigurationStore] CredFilePath: E:\medisage\actions-runner\.credentials
+[2022-01-10 08:44:08Z INFO HostContext] Well known directory 'Bin': 'E:\medisage\actions-runner\bin'
+[2022-01-10 08:44:08Z INFO HostContext] Well known directory 'Root': 'E:\medisage\actions-runner'
+[2022-01-10 08:44:08Z INFO HostContext] Well known config file 'MigratedCredentials': 'E:\medisage\actions-runner\.credentials_migrated'
+[2022-01-10 08:44:08Z INFO ConfigurationStore] MigratedCredFilePath: E:\medisage\actions-runner\.credentials_migrated
+[2022-01-10 08:44:08Z INFO HostContext] Well known directory 'Bin': 'E:\medisage\actions-runner\bin'
+[2022-01-10 08:44:08Z INFO HostContext] Well known directory 'Root': 'E:\medisage\actions-runner'
+[2022-01-10 08:44:08Z INFO HostContext] Well known config file 'Service': 'E:\medisage\actions-runner\.service'
+[2022-01-10 08:44:08Z INFO ConfigurationStore] ServiceConfigFilePath: E:\medisage\actions-runner\.service
+[2022-01-10 08:44:08Z INFO ConfigurationStore] Read setting file: 303 chars
+[2022-01-10 08:44:08Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2022-01-10 08:44:08Z INFO Worker] Listening for cancel message from the channel.
+[2022-01-10 08:44:08Z INFO Worker] Waiting for the job to complete or for a cancel message from the channel.
+[2022-01-10 08:44:09Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2022-01-10 08:44:09Z INFO JobServerQueue] Start process web console line queue.
+[2022-01-10 08:44:09Z INFO JobServerQueue] Start process file upload queue.
+[2022-01-10 08:44:09Z INFO JobServerQueue] Start process timeline update queue.
+[2022-01-10 08:44:09Z INFO ExecutionContext] Initialize GitHub context
+[2022-01-10 08:44:09Z INFO ExecutionContext] Initialize Env context
+[2022-01-10 08:44:09Z INFO HostContext] Well known directory 'Bin': 'E:\medisage\actions-runner\bin'
+[2022-01-10 08:44:09Z INFO HostContext] Well known directory 'Root': 'E:\medisage\actions-runner'
+[2022-01-10 08:44:09Z INFO HostContext] Well known directory 'Diag': 'E:\medisage\actions-runner\_diag'
+[2022-01-10 08:44:09Z INFO JobRunner] Starting the job execution context.
+[2022-01-10 08:44:09Z INFO HostContext] Well known directory 'Bin': 'E:\medisage\actions-runner\bin'
+[2022-01-10 08:44:09Z INFO HostContext] Well known directory 'Root': 'E:\medisage\actions-runner'
+[2022-01-10 08:44:09Z INFO HostContext] Well known directory 'Work': 'E:\medisage\actions-runner\_work'
+[2022-01-10 08:44:09Z INFO JobRunner] Validating directory permissions for: 'E:\medisage\actions-runner\_work'
+[2022-01-10 08:44:09Z INFO HostContext] Well known directory 'Bin': 'E:\medisage\actions-runner\bin'
+[2022-01-10 08:44:09Z INFO HostContext] Well known directory 'Root': 'E:\medisage\actions-runner'
+[2022-01-10 08:44:09Z INFO HostContext] Well known directory 'Work': 'E:\medisage\actions-runner\_work'
+[2022-01-10 08:44:09Z INFO HostContext] Well known directory 'Tools': 'E:\medisage\actions-runner\_work\_tool'
+[2022-01-10 08:44:09Z INFO HostContext] Well known directory 'Bin': 'E:\medisage\actions-runner\bin'
+[2022-01-10 08:44:09Z INFO HostContext] Well known directory 'Root': 'E:\medisage\actions-runner'
+[2022-01-10 08:44:09Z INFO HostContext] Well known directory 'Work': 'E:\medisage\actions-runner\_work'
+[2022-01-10 08:44:09Z INFO HostContext] Well known directory 'Temp': 'E:\medisage\actions-runner\_work\_temp'
+[2022-01-10 08:44:09Z INFO JobRunner] Getting job extension.
+[2022-01-10 08:44:09Z INFO JobRunner] Initialize job. Getting all job steps.
+[2022-01-10 08:44:09Z INFO HostContext] Well known directory 'Bin': 'E:\medisage\actions-runner\bin'
+[2022-01-10 08:44:09Z INFO HostContext] Well known directory 'Root': 'E:\medisage\actions-runner'
+[2022-01-10 08:44:09Z INFO HostContext] Well known directory 'Diag': 'E:\medisage\actions-runner\_diag'
+[2022-01-10 08:44:09Z INFO HostContext] Well known directory 'Bin': 'E:\medisage\actions-runner\bin'
+[2022-01-10 08:44:09Z INFO HostContext] Well known directory 'Root': 'E:\medisage\actions-runner'
+[2022-01-10 08:44:09Z INFO HostContext] Well known config file 'Credentials': 'E:\medisage\actions-runner\.credentials'
+[2022-01-10 08:44:09Z INFO HostContext] Well known directory 'Bin': 'E:\medisage\actions-runner\bin'
+[2022-01-10 08:44:09Z INFO HostContext] Well known directory 'Root': 'E:\medisage\actions-runner'
+[2022-01-10 08:44:09Z INFO HostContext] Well known config file 'SetupInfo': 'E:\medisage\actions-runner\.setup_info'
+[2022-01-10 08:44:09Z INFO HostContext] Well known directory 'Bin': 'E:\medisage\actions-runner\bin'
+[2022-01-10 08:44:09Z INFO HostContext] Well known directory 'Root': 'E:\medisage\actions-runner'
+[2022-01-10 08:44:09Z INFO HostContext] Well known directory 'Work': 'E:\medisage\actions-runner\_work'
+[2022-01-10 08:44:09Z INFO PipelineDirectoryManager] Loading tracking config if exists: E:\medisage\actions-runner\_work\_PipelineMapping\Shanawazkhan10/medisage\PipelineFolder.json
+[2022-01-10 08:44:09Z INFO PipelineDirectoryManager] Creating a new tracking config file.
+[2022-01-10 08:44:09Z INFO HostContext] Well known directory 'Bin': 'E:\medisage\actions-runner\bin'
+[2022-01-10 08:44:09Z INFO HostContext] Well known directory 'Root': 'E:\medisage\actions-runner'
+[2022-01-10 08:44:09Z INFO HostContext] Well known directory 'Work': 'E:\medisage\actions-runner\_work'
+[2022-01-10 08:44:09Z INFO PipelineDirectoryManager] Creating pipeline directory.
+[2022-01-10 08:44:09Z INFO HostContext] Well known directory 'Bin': 'E:\medisage\actions-runner\bin'
+[2022-01-10 08:44:09Z INFO HostContext] Well known directory 'Root': 'E:\medisage\actions-runner'
+[2022-01-10 08:44:09Z INFO HostContext] Well known directory 'Work': 'E:\medisage\actions-runner\_work'
+[2022-01-10 08:44:09Z INFO PipelineDirectoryManager] Creating workspace directory.
+[2022-01-10 08:44:09Z INFO HostContext] Well known directory 'Bin': 'E:\medisage\actions-runner\bin'
+[2022-01-10 08:44:09Z INFO HostContext] Well known directory 'Root': 'E:\medisage\actions-runner'
+[2022-01-10 08:44:09Z INFO HostContext] Well known directory 'Work': 'E:\medisage\actions-runner\_work'
+[2022-01-10 08:44:09Z INFO JobExtension] Downloading actions
+[2022-01-10 08:44:09Z INFO HostContext] Well known directory 'Bin': 'E:\medisage\actions-runner\bin'
+[2022-01-10 08:44:09Z INFO HostContext] Well known directory 'Root': 'E:\medisage\actions-runner'
+[2022-01-10 08:44:09Z INFO HostContext] Well known directory 'Work': 'E:\medisage\actions-runner\_work'
+[2022-01-10 08:44:09Z INFO HostContext] Well known directory 'Actions': 'E:\medisage\actions-runner\_work\_actions'
+[2022-01-10 08:44:09Z INFO JobServerQueue] Try to append 1 batches web console lines for record '05141362-e989-4a75-9ae7-91d65e23a26f', success rate: 1/1.
+[2022-01-10 08:44:09Z INFO HostContext] Well known directory 'Bin': 'E:\medisage\actions-runner\bin'
+[2022-01-10 08:44:09Z INFO HostContext] Well known directory 'Root': 'E:\medisage\actions-runner'
+[2022-01-10 08:44:09Z INFO HostContext] Well known directory 'Work': 'E:\medisage\actions-runner\_work'
+[2022-01-10 08:44:09Z INFO HostContext] Well known directory 'Actions': 'E:\medisage\actions-runner\_work\_actions'
+[2022-01-10 08:44:09Z INFO HostContext] Well known directory 'Bin': 'E:\medisage\actions-runner\bin'
+[2022-01-10 08:44:09Z INFO HostContext] Well known directory 'Root': 'E:\medisage\actions-runner'
+[2022-01-10 08:44:09Z INFO HostContext] Well known directory 'Work': 'E:\medisage\actions-runner\_work'
+[2022-01-10 08:44:09Z INFO HostContext] Well known directory 'Actions': 'E:\medisage\actions-runner\_work\_actions'
+[2022-01-10 08:44:09Z INFO ActionManager] Save archive 'https://api.github.com/repos/actions/checkout/zipball/ec3a7ce113134d7a93b817d10a8272cb61118579' into E:\medisage\actions-runner\_work\_actions\_temp_1816c0e0-53a4-4ffa-89cb-7ba8a591cd89\49c423ce-1618-4152-bc91-a3d175874d88.zip.
+[2022-01-10 08:44:10Z INFO JobServerQueue] Job timeline record has been updated for the first time.
+[2022-01-10 08:44:10Z INFO JobServerQueue] Try to append 1 batches web console lines for record '05141362-e989-4a75-9ae7-91d65e23a26f', success rate: 1/1.
+[2022-01-10 08:44:11Z INFO ActionManager] Finished getting action repository.
+[2022-01-10 08:44:11Z INFO HostContext] Well known directory 'Bin': 'E:\medisage\actions-runner\bin'
+[2022-01-10 08:44:11Z INFO HostContext] Well known directory 'Root': 'E:\medisage\actions-runner'
+[2022-01-10 08:44:11Z INFO HostContext] Well known directory 'Work': 'E:\medisage\actions-runner\_work'
+[2022-01-10 08:44:11Z INFO HostContext] Well known directory 'Actions': 'E:\medisage\actions-runner\_work\_actions'
+[2022-01-10 08:44:11Z INFO HostContext] Well known directory 'Bin': 'E:\medisage\actions-runner\bin'
+[2022-01-10 08:44:11Z INFO HostContext] Well known directory 'Root': 'E:\medisage\actions-runner'
+[2022-01-10 08:44:11Z INFO HostContext] Well known directory 'Work': 'E:\medisage\actions-runner\_work'
+[2022-01-10 08:44:11Z INFO HostContext] Well known directory 'Actions': 'E:\medisage\actions-runner\_work\_actions'
+[2022-01-10 08:44:11Z INFO ActionManager] Save archive 'https://api.github.com/repos/actions/setup-node/zipball/1f8c6b94b26d0feae1e387ca63ccbdc44d27b561' into E:\medisage\actions-runner\_work\_actions\_temp_57a928d9-432c-43a3-8985-2af44efb6d93\e5957671-361b-4572-8bb4-e4ef21754ecb.zip.
+[2022-01-10 08:44:11Z INFO JobServerQueue] Try to append 1 batches web console lines for record '05141362-e989-4a75-9ae7-91d65e23a26f', success rate: 1/1.
+[2022-01-10 08:44:12Z INFO ActionManager] Finished getting action repository.
+[2022-01-10 08:44:12Z INFO HostContext] Well known directory 'Bin': 'E:\medisage\actions-runner\bin'
+[2022-01-10 08:44:12Z INFO HostContext] Well known directory 'Root': 'E:\medisage\actions-runner'
+[2022-01-10 08:44:12Z INFO HostContext] Well known directory 'Work': 'E:\medisage\actions-runner\_work'
+[2022-01-10 08:44:12Z INFO HostContext] Well known directory 'Actions': 'E:\medisage\actions-runner\_work\_actions'
+[2022-01-10 08:44:12Z INFO ActionManifestManager] Load schema file with definitions: [
+  "null",
+  "boolean",
+  "number",
+  "string",
+  "sequence",
+  "mapping",
+  "any",
+  "action-root",
+  "inputs",
+  "input",
+  "outputs",
+  "output-definition",
+  "runs",
+  "container-runs",
+  "container-runs-args",
+  "container-runs-env",
+  "node-runs",
+  "plugin-runs",
+  "composite-runs",
+  "composite-steps",
+  "composite-step",
+  "run-step",
+  "uses-step",
+  "container-runs-context",
+  "output-value",
+  "input-default-context",
+  "non-empty-string",
+  "string-steps-context",
+  "step-env",
+  "step-if",
+  "step-with"
+]
+[2022-01-10 08:44:12Z INFO HostContext] Well known directory 'Bin': 'E:\medisage\actions-runner\bin'
+[2022-01-10 08:44:12Z INFO HostContext] Well known directory 'Root': 'E:\medisage\actions-runner'
+[2022-01-10 08:44:12Z INFO HostContext] Well known directory 'Work': 'E:\medisage\actions-runner\_work'
+[2022-01-10 08:44:12Z INFO HostContext] Well known directory 'Actions': 'E:\medisage\actions-runner\_work\_actions'
+[2022-01-10 08:44:12Z INFO ActionManifestManager] Loaded action.yml file: {
+  "name": "Checkout",
+  "description": "Checkout a Git repository at a particular version",
+  "inputs": {
+    "type": 2,
+    "map": [
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 4,
+          "col": 3,
+          "lit": "repository"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 6,
+          "col": 14,
+          "expr": "github.repository"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 7,
+          "col": 3,
+          "lit": "ref"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 12,
+          "col": 3,
+          "lit": "token"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 24,
+          "col": 14,
+          "expr": "github.token"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 25,
+          "col": 3,
+          "lit": "ssh-key"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 37,
+          "col": 3,
+          "lit": "ssh-known-hosts"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 42,
+          "col": 3,
+          "lit": "ssh-strict"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 47,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 48,
+          "col": 3,
+          "lit": "persist-credentials"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 50,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 51,
+          "col": 3,
+          "lit": "path"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 53,
+          "col": 3,
+          "lit": "clean"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 55,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 56,
+          "col": 3,
+          "lit": "fetch-depth"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 58,
+          "col": 14,
+          "lit": "1"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 59,
+          "col": 3,
+          "lit": "lfs"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 61,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 62,
+          "col": 3,
+          "lit": "submodules"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 70,
+          "col": 14,
+          "lit": "false"
+        }
+      }
+    ]
+  },
+  "execution": {
+    "executionType": "nodeJS",
+    "hasPre": false,
+    "hasPost": true,
+    "script": "dist/index.js",
+    "pre": null,
+    "post": "dist/index.js",
+    "nodeVersion": "node12",
+    "cleanupCondition": "always()",
+    "initCondition": "always()"
+  },
+  "deprecated": null
+}
+[2022-01-10 08:44:12Z INFO ActionManager] Action node.js file: dist/index.js, no more preparation.
+[2022-01-10 08:44:12Z INFO HostContext] Well known directory 'Bin': 'E:\medisage\actions-runner\bin'
+[2022-01-10 08:44:12Z INFO HostContext] Well known directory 'Root': 'E:\medisage\actions-runner'
+[2022-01-10 08:44:12Z INFO HostContext] Well known directory 'Work': 'E:\medisage\actions-runner\_work'
+[2022-01-10 08:44:12Z INFO HostContext] Well known directory 'Actions': 'E:\medisage\actions-runner\_work\_actions'
+[2022-01-10 08:44:12Z INFO ActionManager] Load action that reference repository from 'E:\medisage\actions-runner\_work\_actions\actions\checkout\v2'
+[2022-01-10 08:44:12Z INFO HostContext] Well known directory 'Bin': 'E:\medisage\actions-runner\bin'
+[2022-01-10 08:44:12Z INFO HostContext] Well known directory 'Root': 'E:\medisage\actions-runner'
+[2022-01-10 08:44:12Z INFO HostContext] Well known directory 'Work': 'E:\medisage\actions-runner\_work'
+[2022-01-10 08:44:12Z INFO HostContext] Well known directory 'Actions': 'E:\medisage\actions-runner\_work\_actions'
+[2022-01-10 08:44:12Z INFO ActionManifestManager] Loaded action.yml file: {
+  "name": "Checkout",
+  "description": "Checkout a Git repository at a particular version",
+  "inputs": {
+    "type": 2,
+    "map": [
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 4,
+          "col": 3,
+          "lit": "repository"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 6,
+          "col": 14,
+          "expr": "github.repository"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 7,
+          "col": 3,
+          "lit": "ref"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 12,
+          "col": 3,
+          "lit": "token"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 24,
+          "col": 14,
+          "expr": "github.token"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 25,
+          "col": 3,
+          "lit": "ssh-key"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 37,
+          "col": 3,
+          "lit": "ssh-known-hosts"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 42,
+          "col": 3,
+          "lit": "ssh-strict"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 47,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 48,
+          "col": 3,
+          "lit": "persist-credentials"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 50,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 51,
+          "col": 3,
+          "lit": "path"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 53,
+          "col": 3,
+          "lit": "clean"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 55,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 56,
+          "col": 3,
+          "lit": "fetch-depth"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 58,
+          "col": 14,
+          "lit": "1"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 59,
+          "col": 3,
+          "lit": "lfs"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 61,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 62,
+          "col": 3,
+          "lit": "submodules"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 70,
+          "col": 14,
+          "lit": "false"
+        }
+      }
+    ]
+  },
+  "execution": {
+    "executionType": "nodeJS",
+    "hasPre": false,
+    "hasPost": true,
+    "script": "dist/index.js",
+    "pre": null,
+    "post": "dist/index.js",
+    "nodeVersion": "node12",
+    "cleanupCondition": "always()",
+    "initCondition": "always()"
+  },
+  "deprecated": null
+}
+[2022-01-10 08:44:12Z INFO ActionManager] Action pre node.js file: N/A.
+[2022-01-10 08:44:12Z INFO ActionManager] Action node.js file: dist/index.js.
+[2022-01-10 08:44:12Z INFO ActionManager] Action post node.js file: dist/index.js.
+[2022-01-10 08:44:12Z INFO HostContext] Well known directory 'Bin': 'E:\medisage\actions-runner\bin'
+[2022-01-10 08:44:12Z INFO HostContext] Well known directory 'Root': 'E:\medisage\actions-runner'
+[2022-01-10 08:44:12Z INFO HostContext] Well known directory 'Work': 'E:\medisage\actions-runner\_work'
+[2022-01-10 08:44:12Z INFO HostContext] Well known directory 'Actions': 'E:\medisage\actions-runner\_work\_actions'
+[2022-01-10 08:44:12Z INFO HostContext] Well known directory 'Bin': 'E:\medisage\actions-runner\bin'
+[2022-01-10 08:44:12Z INFO HostContext] Well known directory 'Root': 'E:\medisage\actions-runner'
+[2022-01-10 08:44:12Z INFO HostContext] Well known directory 'Work': 'E:\medisage\actions-runner\_work'
+[2022-01-10 08:44:12Z INFO HostContext] Well known directory 'Actions': 'E:\medisage\actions-runner\_work\_actions'
+[2022-01-10 08:44:12Z INFO ActionManifestManager] Ignore action property author.
+[2022-01-10 08:44:12Z INFO ActionManifestManager] Loaded action.yml file: {
+  "name": "Setup Node.js environment",
+  "description": "Setup a Node.js environment by adding problem matchers and optionally downloading and adding it to the PATH",
+  "inputs": {
+    "type": 2,
+    "map": [
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 5,
+          "col": 3,
+          "lit": "always-auth"
+        },
+        "value": {
+          "type": 0,
+          "file": 3,
+          "line": 7,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 8,
+          "col": 3,
+          "lit": "node-version"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 10,
+          "col": 3,
+          "lit": "node-version-file"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 12,
+          "col": 3,
+          "lit": "architecture"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 14,
+          "col": 3,
+          "lit": "check-latest"
+        },
+        "value": {
+          "type": 0,
+          "file": 3,
+          "line": 16,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 17,
+          "col": 3,
+          "lit": "registry-url"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 19,
+          "col": 3,
+          "lit": "scope"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 21,
+          "col": 3,
+          "lit": "token"
+        },
+        "value": {
+          "type": 3,
+          "file": 3,
+          "line": 23,
+          "col": 14,
+          "expr": "github.token"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 24,
+          "col": 3,
+          "lit": "cache"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 26,
+          "col": 3,
+          "lit": "cache-dependency-path"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 31,
+          "col": 3,
+          "lit": "version"
+        },
+        "value": ""
+      }
+    ]
+  },
+  "execution": {
+    "executionType": "nodeJS",
+    "hasPre": false,
+    "hasPost": true,
+    "script": "dist/setup/index.js",
+    "pre": null,
+    "post": "dist/cache-save/index.js",
+    "nodeVersion": "node12",
+    "cleanupCondition": "success()",
+    "initCondition": "always()"
+  },
+  "deprecated": {
+    "version": "The version property will not be supported after October 1, 2019. Use node-version instead"
+  }
+}
+[2022-01-10 08:44:12Z INFO ActionManager] Action node.js file: dist/setup/index.js, no more preparation.
+[2022-01-10 08:44:12Z INFO HostContext] Well known directory 'Bin': 'E:\medisage\actions-runner\bin'
+[2022-01-10 08:44:12Z INFO HostContext] Well known directory 'Root': 'E:\medisage\actions-runner'
+[2022-01-10 08:44:12Z INFO HostContext] Well known directory 'Work': 'E:\medisage\actions-runner\_work'
+[2022-01-10 08:44:12Z INFO HostContext] Well known directory 'Actions': 'E:\medisage\actions-runner\_work\_actions'
+[2022-01-10 08:44:12Z INFO ActionManager] Load action that reference repository from 'E:\medisage\actions-runner\_work\_actions\actions\setup-node\v2'
+[2022-01-10 08:44:12Z INFO HostContext] Well known directory 'Bin': 'E:\medisage\actions-runner\bin'
+[2022-01-10 08:44:12Z INFO HostContext] Well known directory 'Root': 'E:\medisage\actions-runner'
+[2022-01-10 08:44:12Z INFO HostContext] Well known directory 'Work': 'E:\medisage\actions-runner\_work'
+[2022-01-10 08:44:12Z INFO HostContext] Well known directory 'Actions': 'E:\medisage\actions-runner\_work\_actions'
+[2022-01-10 08:44:12Z INFO ActionManifestManager] Ignore action property author.
+[2022-01-10 08:44:12Z INFO ActionManifestManager] Loaded action.yml file: {
+  "name": "Setup Node.js environment",
+  "description": "Setup a Node.js environment by adding problem matchers and optionally downloading and adding it to the PATH",
+  "inputs": {
+    "type": 2,
+    "map": [
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 5,
+          "col": 3,
+          "lit": "always-auth"
+        },
+        "value": {
+          "type": 0,
+          "file": 3,
+          "line": 7,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 8,
+          "col": 3,
+          "lit": "node-version"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 10,
+          "col": 3,
+          "lit": "node-version-file"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 12,
+          "col": 3,
+          "lit": "architecture"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 14,
+          "col": 3,
+          "lit": "check-latest"
+        },
+        "value": {
+          "type": 0,
+          "file": 3,
+          "line": 16,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 17,
+          "col": 3,
+          "lit": "registry-url"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 19,
+          "col": 3,
+          "lit": "scope"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 21,
+          "col": 3,
+          "lit": "token"
+        },
+        "value": {
+          "type": 3,
+          "file": 3,
+          "line": 23,
+          "col": 14,
+          "expr": "github.token"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 24,
+          "col": 3,
+          "lit": "cache"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 26,
+          "col": 3,
+          "lit": "cache-dependency-path"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 31,
+          "col": 3,
+          "lit": "version"
+        },
+        "value": ""
+      }
+    ]
+  },
+  "execution": {
+    "executionType": "nodeJS",
+    "hasPre": false,
+    "hasPost": true,
+    "script": "dist/setup/index.js",
+    "pre": null,
+    "post": "dist/cache-save/index.js",
+    "nodeVersion": "node12",
+    "cleanupCondition": "success()",
+    "initCondition": "always()"
+  },
+  "deprecated": {
+    "version": "The version property will not be supported after October 1, 2019. Use node-version instead"
+  }
+}
+[2022-01-10 08:44:12Z INFO ActionManager] Action pre node.js file: N/A.
+[2022-01-10 08:44:12Z INFO ActionManager] Action node.js file: dist/setup/index.js.
+[2022-01-10 08:44:12Z INFO ActionManager] Action post node.js file: dist/cache-save/index.js.
+[2022-01-10 08:44:12Z INFO JobExtension] Adding .
+[2022-01-10 08:44:12Z INFO JobExtension] Adding .
+[2022-01-10 08:44:12Z INFO JobExtension] Adding .
+[2022-01-10 08:44:12Z INFO JobExtension] Adding .
+[2022-01-10 08:44:12Z INFO JobExtension] Adding .
+[2022-01-10 08:44:12Z INFO HostContext] Well known directory 'Bin': 'E:\medisage\actions-runner\bin'
+[2022-01-10 08:44:12Z INFO HostContext] Well known directory 'Root': 'E:\medisage\actions-runner'
+[2022-01-10 08:44:12Z INFO HostContext] Well known directory 'Diag': 'E:\medisage\actions-runner\_diag'
+[2022-01-10 08:44:12Z INFO HostContext] Well known directory 'Bin': 'E:\medisage\actions-runner\bin'
+[2022-01-10 08:44:12Z INFO HostContext] Well known directory 'Root': 'E:\medisage\actions-runner'
+[2022-01-10 08:44:12Z INFO HostContext] Well known directory 'Diag': 'E:\medisage\actions-runner\_diag'
+[2022-01-10 08:44:12Z INFO HostContext] Well known directory 'Bin': 'E:\medisage\actions-runner\bin'
+[2022-01-10 08:44:12Z INFO HostContext] Well known directory 'Root': 'E:\medisage\actions-runner'
+[2022-01-10 08:44:12Z INFO HostContext] Well known directory 'Diag': 'E:\medisage\actions-runner\_diag'
+[2022-01-10 08:44:12Z INFO HostContext] Well known directory 'Bin': 'E:\medisage\actions-runner\bin'
+[2022-01-10 08:44:12Z INFO HostContext] Well known directory 'Root': 'E:\medisage\actions-runner'
+[2022-01-10 08:44:12Z INFO HostContext] Well known directory 'Diag': 'E:\medisage\actions-runner\_diag'
+[2022-01-10 08:44:12Z INFO HostContext] Well known directory 'Bin': 'E:\medisage\actions-runner\bin'
+[2022-01-10 08:44:12Z INFO HostContext] Well known directory 'Root': 'E:\medisage\actions-runner'
+[2022-01-10 08:44:12Z INFO HostContext] Well known directory 'Diag': 'E:\medisage\actions-runner\_diag'
+[2022-01-10 08:44:13Z INFO JobExtension] Total accessible running process: 191.
+[2022-01-10 08:44:13Z INFO HostContext] Well known directory 'Bin': 'E:\medisage\actions-runner\bin'
+[2022-01-10 08:44:13Z INFO HostContext] Well known directory 'Root': 'E:\medisage\actions-runner'
+[2022-01-10 08:44:13Z INFO HostContext] Well known directory 'Work': 'E:\medisage\actions-runner\_work'
+[2022-01-10 08:44:13Z INFO JobRunner] Total job steps: 5.
+[2022-01-10 08:44:13Z INFO JobRunner] Run all job steps.
+[2022-01-10 08:44:13Z INFO StepsRunner] Processing step: DisplayName='Run actions/checkout@v2'
+[2022-01-10 08:44:13Z INFO StepsRunner] Evaluating: success()
+[2022-01-10 08:44:13Z INFO StepsRunner] Result: true
+[2022-01-10 08:44:13Z INFO StepsRunner] Starting the step.
+[2022-01-10 08:44:13Z INFO HostContext] Well known directory 'Bin': 'E:\medisage\actions-runner\bin'
+[2022-01-10 08:44:13Z INFO HostContext] Well known directory 'Root': 'E:\medisage\actions-runner'
+[2022-01-10 08:44:13Z INFO HostContext] Well known directory 'Work': 'E:\medisage\actions-runner\_work'
+[2022-01-10 08:44:13Z INFO StepsRunner] Which: 'chcp'
+[2022-01-10 08:44:13Z INFO StepsRunner] Location: 'C:\Windows\system32\chcp.COM'
+[2022-01-10 08:44:13Z INFO ProcessInvokerWrapper] Starting process:
+[2022-01-10 08:44:13Z INFO ProcessInvokerWrapper]   File name: 'C:\Windows\system32\chcp.COM'
+[2022-01-10 08:44:13Z INFO ProcessInvokerWrapper]   Arguments: '65001'
+[2022-01-10 08:44:13Z INFO ProcessInvokerWrapper]   Working directory: 'E:\medisage\actions-runner\_work'
+[2022-01-10 08:44:13Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2022-01-10 08:44:13Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2022-01-10 08:44:13Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2022-01-10 08:44:13Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2022-01-10 08:44:13Z INFO ProcessInvokerWrapper]   Persist current code page: 'True'
+[2022-01-10 08:44:13Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2022-01-10 08:44:13Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2022-01-10 08:44:13Z INFO ProcessInvokerWrapper] Process started with process id 6168, waiting for process exit.
+[2022-01-10 08:44:13Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2022-01-10 08:44:13Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2022-01-10 08:44:13Z INFO ProcessInvokerWrapper] Finished process 6168 with exit code 0, and elapsed time 00:00:00.0170288.
+[2022-01-10 08:44:13Z INFO StepsRunner] Successfully returned to code page 65001 (UTF8)
+[2022-01-10 08:44:13Z INFO HostContext] Well known directory 'Bin': 'E:\medisage\actions-runner\bin'
+[2022-01-10 08:44:13Z INFO HostContext] Well known directory 'Root': 'E:\medisage\actions-runner'
+[2022-01-10 08:44:13Z INFO HostContext] Well known directory 'Work': 'E:\medisage\actions-runner\_work'
+[2022-01-10 08:44:13Z INFO HostContext] Well known directory 'Actions': 'E:\medisage\actions-runner\_work\_actions'
+[2022-01-10 08:44:13Z INFO ActionManager] Load action that reference repository from 'E:\medisage\actions-runner\_work\_actions\actions\checkout\v2'
+[2022-01-10 08:44:13Z INFO HostContext] Well known directory 'Bin': 'E:\medisage\actions-runner\bin'
+[2022-01-10 08:44:13Z INFO HostContext] Well known directory 'Root': 'E:\medisage\actions-runner'
+[2022-01-10 08:44:13Z INFO HostContext] Well known directory 'Work': 'E:\medisage\actions-runner\_work'
+[2022-01-10 08:44:13Z INFO HostContext] Well known directory 'Actions': 'E:\medisage\actions-runner\_work\_actions'
+[2022-01-10 08:44:13Z INFO ActionManifestManager] Loaded action.yml file: {
+  "name": "Checkout",
+  "description": "Checkout a Git repository at a particular version",
+  "inputs": {
+    "type": 2,
+    "map": [
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 4,
+          "col": 3,
+          "lit": "repository"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 6,
+          "col": 14,
+          "expr": "github.repository"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 7,
+          "col": 3,
+          "lit": "ref"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 12,
+          "col": 3,
+          "lit": "token"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 24,
+          "col": 14,
+          "expr": "github.token"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 25,
+          "col": 3,
+          "lit": "ssh-key"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 37,
+          "col": 3,
+          "lit": "ssh-known-hosts"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 42,
+          "col": 3,
+          "lit": "ssh-strict"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 47,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 48,
+          "col": 3,
+          "lit": "persist-credentials"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 50,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 51,
+          "col": 3,
+          "lit": "path"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 53,
+          "col": 3,
+          "lit": "clean"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 55,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 56,
+          "col": 3,
+          "lit": "fetch-depth"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 58,
+          "col": 14,
+          "lit": "1"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 59,
+          "col": 3,
+          "lit": "lfs"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 61,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 62,
+          "col": 3,
+          "lit": "submodules"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 70,
+          "col": 14,
+          "lit": "false"
+        }
+      }
+    ]
+  },
+  "execution": {
+    "executionType": "nodeJS",
+    "hasPre": false,
+    "hasPost": true,
+    "script": "dist/index.js",
+    "pre": null,
+    "post": "dist/index.js",
+    "nodeVersion": "node12",
+    "cleanupCondition": "always()",
+    "initCondition": "always()"
+  },
+  "deprecated": null
+}
+[2022-01-10 08:44:13Z INFO ActionManager] Action pre node.js file: N/A.
+[2022-01-10 08:44:13Z INFO ActionManager] Action node.js file: dist/index.js.
+[2022-01-10 08:44:13Z INFO ActionManager] Action post node.js file: dist/index.js.
+[2022-01-10 08:44:13Z INFO ExecutionContext] Reserve record order 7 to 12 for post job actions.
+[2022-01-10 08:44:13Z INFO HostContext] Well known directory 'Bin': 'E:\medisage\actions-runner\bin'
+[2022-01-10 08:44:13Z INFO HostContext] Well known directory 'Root': 'E:\medisage\actions-runner'
+[2022-01-10 08:44:13Z INFO HostContext] Well known directory 'Diag': 'E:\medisage\actions-runner\_diag'
+[2022-01-10 08:44:13Z INFO HostContext] Well known directory 'Bin': 'E:\medisage\actions-runner\bin'
+[2022-01-10 08:44:13Z INFO HostContext] Well known directory 'Root': 'E:\medisage\actions-runner'
+[2022-01-10 08:44:13Z INFO HostContext] Well known directory 'Work': 'E:\medisage\actions-runner\_work'
+[2022-01-10 08:44:13Z INFO HostContext] Well known directory 'Temp': 'E:\medisage\actions-runner\_work\_temp'
+[2022-01-10 08:44:13Z INFO ActionRunner] Write event payload to E:\medisage\actions-runner\_work\_temp\_github_workflow\event.json
+[2022-01-10 08:44:13Z INFO HostContext] Well known directory 'Bin': 'E:\medisage\actions-runner\bin'
+[2022-01-10 08:44:13Z INFO HostContext] Well known directory 'Root': 'E:\medisage\actions-runner'
+[2022-01-10 08:44:13Z INFO HostContext] Well known directory 'Work': 'E:\medisage\actions-runner\_work'
+[2022-01-10 08:44:13Z INFO HostContext] Well known directory 'Temp': 'E:\medisage\actions-runner\_work\_temp'
+[2022-01-10 08:44:13Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IFileCommandExtension'
+[2022-01-10 08:44:13Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.AddPathFileCommand, Runner.Worker
+[2022-01-10 08:44:13Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.SetEnvFileCommand, Runner.Worker
+[2022-01-10 08:44:13Z INFO ActionManifestManager] Input 'repository': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 6,
+  "col": 14,
+  "lit": "Shanawazkhan10/medisage"
+}
+[2022-01-10 08:44:13Z INFO ActionManifestManager] Input 'ref': default value evaluate result: ""
+[2022-01-10 08:44:13Z INFO ActionManifestManager] Input 'token': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 24,
+  "col": 14,
+  "lit": "***"
+}
+[2022-01-10 08:44:13Z INFO ActionManifestManager] Input 'ssh-key': default value evaluate result: ""
+[2022-01-10 08:44:13Z INFO ActionManifestManager] Input 'ssh-known-hosts': default value evaluate result: ""
+[2022-01-10 08:44:13Z INFO ActionManifestManager] Input 'ssh-strict': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 47,
+  "col": 14,
+  "lit": "true"
+}
+[2022-01-10 08:44:13Z INFO ActionManifestManager] Input 'persist-credentials': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 50,
+  "col": 14,
+  "lit": "true"
+}
+[2022-01-10 08:44:13Z INFO ActionManifestManager] Input 'path': default value evaluate result: ""
+[2022-01-10 08:44:13Z INFO ActionManifestManager] Input 'clean': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 55,
+  "col": 14,
+  "lit": "true"
+}
+[2022-01-10 08:44:13Z INFO ActionManifestManager] Input 'fetch-depth': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 58,
+  "col": 14,
+  "lit": "1"
+}
+[2022-01-10 08:44:13Z INFO ActionManifestManager] Input 'lfs': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 61,
+  "col": 14,
+  "lit": "false"
+}
+[2022-01-10 08:44:13Z INFO ActionManifestManager] Input 'submodules': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 70,
+  "col": 14,
+  "lit": "false"
+}
+[2022-01-10 08:44:13Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IActionCommandExtension'
+[2022-01-10 08:44:13Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.InternalPluginSetRepoPathCommandExtension, Runner.Worker
+[2022-01-10 08:44:13Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.SetEnvCommandExtension, Runner.Worker
+[2022-01-10 08:44:13Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.SetOutputCommandExtension, Runner.Worker
+[2022-01-10 08:44:13Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.SaveStateCommandExtension, Runner.Worker
+[2022-01-10 08:44:13Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.AddPathCommandExtension, Runner.Worker
+[2022-01-10 08:44:13Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.AddMaskCommandExtension, Runner.Worker
+[2022-01-10 08:44:13Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.AddMatcherCommandExtension, Runner.Worker
+[2022-01-10 08:44:13Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.RemoveMatcherCommandExtension, Runner.Worker
+[2022-01-10 08:44:13Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.WarningCommandExtension, Runner.Worker
+[2022-01-10 08:44:13Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.ErrorCommandExtension, Runner.Worker
+[2022-01-10 08:44:13Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.NoticeCommandExtension, Runner.Worker
+[2022-01-10 08:44:13Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.DebugCommandExtension, Runner.Worker
+[2022-01-10 08:44:13Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.GroupCommandExtension, Runner.Worker
+[2022-01-10 08:44:13Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.EndGroupCommandExtension, Runner.Worker
+[2022-01-10 08:44:13Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.EchoCommandExtension, Runner.Worker
+[2022-01-10 08:44:13Z INFO ActionCommandManager] Register action command extension for command internal-set-repo-path
+[2022-01-10 08:44:13Z INFO ActionCommandManager] Register action command extension for command set-env
+[2022-01-10 08:44:13Z INFO ActionCommandManager] Register action command extension for command set-output
+[2022-01-10 08:44:13Z INFO ActionCommandManager] Register action command extension for command save-state
+[2022-01-10 08:44:13Z INFO ActionCommandManager] Register action command extension for command add-path
+[2022-01-10 08:44:13Z INFO ActionCommandManager] Register action command extension for command add-mask
+[2022-01-10 08:44:13Z INFO ActionCommandManager] Register action command extension for command add-matcher
+[2022-01-10 08:44:13Z INFO ActionCommandManager] Register action command extension for command remove-matcher
+[2022-01-10 08:44:13Z INFO ActionCommandManager] Register action command extension for command warning
+[2022-01-10 08:44:13Z INFO ActionCommandManager] Register action command extension for command error
+[2022-01-10 08:44:13Z INFO ActionCommandManager] Register action command extension for command notice
+[2022-01-10 08:44:13Z INFO ActionCommandManager] Register action command extension for command debug
+[2022-01-10 08:44:13Z INFO ActionCommandManager] Register action command extension for command group
+[2022-01-10 08:44:13Z INFO ActionCommandManager] Register action command extension for command endgroup
+[2022-01-10 08:44:13Z INFO ActionCommandManager] Register action command extension for command echo
+[2022-01-10 08:44:13Z INFO HostContext] Well known directory 'Bin': 'E:\medisage\actions-runner\bin'
+[2022-01-10 08:44:13Z INFO HostContext] Well known directory 'Root': 'E:\medisage\actions-runner'
+[2022-01-10 08:44:13Z INFO HostContext] Well known directory 'Externals': 'E:\medisage\actions-runner\externals'
+[2022-01-10 08:44:13Z INFO ProcessInvokerWrapper] Starting process:
+[2022-01-10 08:44:13Z INFO ProcessInvokerWrapper]   File name: 'E:\medisage\actions-runner\externals\node12\bin\node.exe'
+[2022-01-10 08:44:13Z INFO ProcessInvokerWrapper]   Arguments: '"E:\medisage\actions-runner\_work\_actions\actions\checkout\v2\dist/index.js"'
+[2022-01-10 08:44:13Z INFO ProcessInvokerWrapper]   Working directory: 'E:\medisage\actions-runner\_work\medisage\medisage'
+[2022-01-10 08:44:13Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2022-01-10 08:44:13Z INFO ProcessInvokerWrapper]   Encoding web name: utf-8 ; code page: '65001'
+[2022-01-10 08:44:13Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2022-01-10 08:44:13Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2022-01-10 08:44:13Z INFO ProcessInvokerWrapper]   Persist current code page: 'True'
+[2022-01-10 08:44:13Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2022-01-10 08:44:13Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2022-01-10 08:44:13Z INFO JobServerQueue] Try to append 1 batches web console lines for record '6e7a0969-0c16-51a0-2d7e-99f4c766d063', success rate: 1/1.
+[2022-01-10 08:44:13Z INFO ProcessInvokerWrapper] Process started with process id 9944, waiting for process exit.
+[2022-01-10 08:44:14Z INFO JobServerQueue] Try to upload 1 log files or attachments, success rate: 1/1.
+[2022-01-10 08:44:16Z INFO AddMaskCommandExtension] Add new secret mask with length of 76
+[2022-01-10 08:44:17Z INFO JobServerQueue] Try to append 1 batches web console lines for record '6e7a0969-0c16-51a0-2d7e-99f4c766d063', success rate: 1/1.
+[2022-01-10 08:44:17Z INFO JobServerQueue] Try to append 1 batches web console lines for record '6e7a0969-0c16-51a0-2d7e-99f4c766d063', success rate: 1/1.
+[2022-01-10 08:44:18Z INFO JobServerQueue] Try to append 1 batches web console lines for record '6e7a0969-0c16-51a0-2d7e-99f4c766d063', success rate: 1/1.
+[2022-01-10 08:44:19Z INFO JobServerQueue] Try to append 1 batches web console lines for record '6e7a0969-0c16-51a0-2d7e-99f4c766d063', success rate: 1/1.
+[2022-01-10 08:44:20Z INFO JobServerQueue] Try to append 1 batches web console lines for record '6e7a0969-0c16-51a0-2d7e-99f4c766d063', success rate: 1/1.
+[2022-01-10 08:44:22Z INFO JobServerQueue] Try to append 1 batches web console lines for record '6e7a0969-0c16-51a0-2d7e-99f4c766d063', success rate: 1/1.
+[2022-01-10 08:44:22Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2022-01-10 08:44:22Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2022-01-10 08:44:22Z INFO ProcessInvokerWrapper] Finished process 9944 with exit code 0, and elapsed time 00:00:09.9026453.
+[2022-01-10 08:44:22Z INFO StepsRunner] Step result: 
+[2022-01-10 08:44:22Z INFO StepsRunner] No need for updating job result with current step result 'Succeeded'.
+[2022-01-10 08:44:22Z INFO StepsRunner] Current state: job state = ''
+[2022-01-10 08:44:22Z INFO StepsRunner] Processing step: DisplayName='Use Node.js 14.x'
+[2022-01-10 08:44:22Z INFO StepsRunner] Evaluating: success()
+[2022-01-10 08:44:22Z INFO StepsRunner] Result: true
+[2022-01-10 08:44:22Z INFO StepsRunner] Starting the step.
+[2022-01-10 08:44:22Z INFO HostContext] Well known directory 'Bin': 'E:\medisage\actions-runner\bin'
+[2022-01-10 08:44:22Z INFO HostContext] Well known directory 'Root': 'E:\medisage\actions-runner'
+[2022-01-10 08:44:22Z INFO HostContext] Well known directory 'Work': 'E:\medisage\actions-runner\_work'
+[2022-01-10 08:44:22Z INFO StepsRunner] Which: 'chcp'
+[2022-01-10 08:44:23Z INFO StepsRunner] Location: 'C:\Windows\system32\chcp.COM'
+[2022-01-10 08:44:23Z INFO ProcessInvokerWrapper] Starting process:
+[2022-01-10 08:44:23Z INFO ProcessInvokerWrapper]   File name: 'C:\Windows\system32\chcp.COM'
+[2022-01-10 08:44:23Z INFO ProcessInvokerWrapper]   Arguments: '65001'
+[2022-01-10 08:44:23Z INFO ProcessInvokerWrapper]   Working directory: 'E:\medisage\actions-runner\_work'
+[2022-01-10 08:44:23Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2022-01-10 08:44:23Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2022-01-10 08:44:23Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2022-01-10 08:44:23Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2022-01-10 08:44:23Z INFO ProcessInvokerWrapper]   Persist current code page: 'True'
+[2022-01-10 08:44:23Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2022-01-10 08:44:23Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2022-01-10 08:44:23Z INFO ProcessInvokerWrapper] Process started with process id 5820, waiting for process exit.
+[2022-01-10 08:44:23Z INFO HostContext] Well known directory 'Bin': 'E:\medisage\actions-runner\bin'
+[2022-01-10 08:44:23Z INFO HostContext] Well known directory 'Root': 'E:\medisage\actions-runner'
+[2022-01-10 08:44:23Z INFO HostContext] Well known directory 'Work': 'E:\medisage\actions-runner\_work'
+[2022-01-10 08:44:23Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2022-01-10 08:44:23Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2022-01-10 08:44:23Z INFO ProcessInvokerWrapper] Finished process 5820 with exit code 0, and elapsed time 00:00:00.0137675.
+[2022-01-10 08:44:23Z INFO StepsRunner] Successfully returned to code page 65001 (UTF8)
+[2022-01-10 08:44:23Z INFO HostContext] Well known directory 'Bin': 'E:\medisage\actions-runner\bin'
+[2022-01-10 08:44:23Z INFO HostContext] Well known directory 'Root': 'E:\medisage\actions-runner'
+[2022-01-10 08:44:23Z INFO JobServerQueue] Try to append 1 batches web console lines for record '6e7a0969-0c16-51a0-2d7e-99f4c766d063', success rate: 1/1.
+[2022-01-10 08:44:23Z INFO HostContext] Well known directory 'Work': 'E:\medisage\actions-runner\_work'
+[2022-01-10 08:44:23Z INFO HostContext] Well known directory 'Actions': 'E:\medisage\actions-runner\_work\_actions'
+[2022-01-10 08:44:23Z INFO ActionManager] Load action that reference repository from 'E:\medisage\actions-runner\_work\_actions\actions\setup-node\v2'
+[2022-01-10 08:44:23Z INFO HostContext] Well known directory 'Bin': 'E:\medisage\actions-runner\bin'
+[2022-01-10 08:44:23Z INFO HostContext] Well known directory 'Root': 'E:\medisage\actions-runner'
+[2022-01-10 08:44:23Z INFO HostContext] Well known directory 'Work': 'E:\medisage\actions-runner\_work'
+[2022-01-10 08:44:23Z INFO HostContext] Well known directory 'Actions': 'E:\medisage\actions-runner\_work\_actions'
+[2022-01-10 08:44:23Z INFO ActionManifestManager] Ignore action property author.
+[2022-01-10 08:44:23Z INFO ActionManifestManager] Loaded action.yml file: {
+  "name": "Setup Node.js environment",
+  "description": "Setup a Node.js environment by adding problem matchers and optionally downloading and adding it to the PATH",
+  "inputs": {
+    "type": 2,
+    "map": [
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 5,
+          "col": 3,
+          "lit": "always-auth"
+        },
+        "value": {
+          "type": 0,
+          "file": 3,
+          "line": 7,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 8,
+          "col": 3,
+          "lit": "node-version"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 10,
+          "col": 3,
+          "lit": "node-version-file"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 12,
+          "col": 3,
+          "lit": "architecture"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 14,
+          "col": 3,
+          "lit": "check-latest"
+        },
+        "value": {
+          "type": 0,
+          "file": 3,
+          "line": 16,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 17,
+          "col": 3,
+          "lit": "registry-url"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 19,
+          "col": 3,
+          "lit": "scope"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 21,
+          "col": 3,
+          "lit": "token"
+        },
+        "value": {
+          "type": 3,
+          "file": 3,
+          "line": 23,
+          "col": 14,
+          "expr": "github.token"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 24,
+          "col": 3,
+          "lit": "cache"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 26,
+          "col": 3,
+          "lit": "cache-dependency-path"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 31,
+          "col": 3,
+          "lit": "version"
+        },
+        "value": ""
+      }
+    ]
+  },
+  "execution": {
+    "executionType": "nodeJS",
+    "hasPre": false,
+    "hasPost": true,
+    "script": "dist/setup/index.js",
+    "pre": null,
+    "post": "dist/cache-save/index.js",
+    "nodeVersion": "node12",
+    "cleanupCondition": "success()",
+    "initCondition": "always()"
+  },
+  "deprecated": {
+    "version": "The version property will not be supported after October 1, 2019. Use node-version instead"
+  }
+}
+[2022-01-10 08:44:23Z INFO ActionManager] Action pre node.js file: N/A.
+[2022-01-10 08:44:23Z INFO ActionManager] Action node.js file: dist/setup/index.js.
+[2022-01-10 08:44:23Z INFO ActionManager] Action post node.js file: dist/cache-save/index.js.
+[2022-01-10 08:44:23Z INFO HostContext] Well known directory 'Bin': 'E:\medisage\actions-runner\bin'
+[2022-01-10 08:44:23Z INFO HostContext] Well known directory 'Root': 'E:\medisage\actions-runner'
+[2022-01-10 08:44:23Z INFO HostContext] Well known directory 'Diag': 'E:\medisage\actions-runner\_diag'
+[2022-01-10 08:44:23Z INFO HostContext] Well known directory 'Bin': 'E:\medisage\actions-runner\bin'
+[2022-01-10 08:44:23Z INFO HostContext] Well known directory 'Root': 'E:\medisage\actions-runner'
+[2022-01-10 08:44:23Z INFO HostContext] Well known directory 'Work': 'E:\medisage\actions-runner\_work'
+[2022-01-10 08:44:23Z INFO HostContext] Well known directory 'Temp': 'E:\medisage\actions-runner\_work\_temp'
+[2022-01-10 08:44:23Z INFO ActionRunner] Write event payload to E:\medisage\actions-runner\_work\_temp\_github_workflow\event.json
+[2022-01-10 08:44:23Z INFO HostContext] Well known directory 'Bin': 'E:\medisage\actions-runner\bin'
+[2022-01-10 08:44:23Z INFO HostContext] Well known directory 'Root': 'E:\medisage\actions-runner'
+[2022-01-10 08:44:23Z INFO HostContext] Well known directory 'Work': 'E:\medisage\actions-runner\_work'
+[2022-01-10 08:44:23Z INFO HostContext] Well known directory 'Temp': 'E:\medisage\actions-runner\_work\_temp'
+[2022-01-10 08:44:23Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IFileCommandExtension'
+[2022-01-10 08:44:23Z INFO ActionManifestManager] Input 'always-auth': default value evaluate result: {
+  "type": 0,
+  "file": 3,
+  "line": 7,
+  "col": 14,
+  "lit": "false"
+}
+[2022-01-10 08:44:23Z INFO ActionManifestManager] Input 'node-version-file': default value evaluate result: ""
+[2022-01-10 08:44:23Z INFO ActionManifestManager] Input 'architecture': default value evaluate result: ""
+[2022-01-10 08:44:23Z INFO ActionManifestManager] Input 'check-latest': default value evaluate result: {
+  "type": 0,
+  "file": 3,
+  "line": 16,
+  "col": 14,
+  "lit": "false"
+}
+[2022-01-10 08:44:23Z INFO ActionManifestManager] Input 'registry-url': default value evaluate result: ""
+[2022-01-10 08:44:23Z INFO ActionManifestManager] Input 'scope': default value evaluate result: ""
+[2022-01-10 08:44:23Z INFO ActionManifestManager] Input 'token': default value evaluate result: {
+  "type": 0,
+  "file": 3,
+  "line": 23,
+  "col": 14,
+  "lit": "***"
+}
+[2022-01-10 08:44:23Z INFO ActionManifestManager] Input 'cache-dependency-path': default value evaluate result: ""
+[2022-01-10 08:44:23Z INFO ActionManifestManager] Input 'version': default value evaluate result: ""
+[2022-01-10 08:44:23Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IActionCommandExtension'
+[2022-01-10 08:44:23Z INFO ActionCommandManager] Register action command extension for command internal-set-repo-path
+[2022-01-10 08:44:23Z INFO ActionCommandManager] Register action command extension for command set-env
+[2022-01-10 08:44:23Z INFO ActionCommandManager] Register action command extension for command set-output
+[2022-01-10 08:44:23Z INFO ActionCommandManager] Register action command extension for command save-state
+[2022-01-10 08:44:23Z INFO ActionCommandManager] Register action command extension for command add-path
+[2022-01-10 08:44:23Z INFO ActionCommandManager] Register action command extension for command add-mask
+[2022-01-10 08:44:23Z INFO ActionCommandManager] Register action command extension for command add-matcher
+[2022-01-10 08:44:23Z INFO ActionCommandManager] Register action command extension for command remove-matcher
+[2022-01-10 08:44:23Z INFO ActionCommandManager] Register action command extension for command warning
+[2022-01-10 08:44:23Z INFO ActionCommandManager] Register action command extension for command error
+[2022-01-10 08:44:23Z INFO ActionCommandManager] Register action command extension for command notice
+[2022-01-10 08:44:23Z INFO ActionCommandManager] Register action command extension for command debug
+[2022-01-10 08:44:23Z INFO ActionCommandManager] Register action command extension for command group
+[2022-01-10 08:44:23Z INFO ActionCommandManager] Register action command extension for command endgroup
+[2022-01-10 08:44:23Z INFO ActionCommandManager] Register action command extension for command echo
+[2022-01-10 08:44:23Z INFO HostContext] Well known directory 'Bin': 'E:\medisage\actions-runner\bin'
+[2022-01-10 08:44:23Z INFO HostContext] Well known directory 'Root': 'E:\medisage\actions-runner'
+[2022-01-10 08:44:23Z INFO HostContext] Well known directory 'Externals': 'E:\medisage\actions-runner\externals'
+[2022-01-10 08:44:23Z INFO ProcessInvokerWrapper] Starting process:
+[2022-01-10 08:44:23Z INFO ProcessInvokerWrapper]   File name: 'E:\medisage\actions-runner\externals\node12\bin\node.exe'
+[2022-01-10 08:44:23Z INFO ProcessInvokerWrapper]   Arguments: '"E:\medisage\actions-runner\_work\_actions\actions\setup-node\v2\dist/setup/index.js"'
+[2022-01-10 08:44:23Z INFO ProcessInvokerWrapper]   Working directory: 'E:\medisage\actions-runner\_work\medisage\medisage'
+[2022-01-10 08:44:23Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2022-01-10 08:44:23Z INFO ProcessInvokerWrapper]   Encoding web name: utf-8 ; code page: '65001'
+[2022-01-10 08:44:23Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2022-01-10 08:44:23Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2022-01-10 08:44:23Z INFO ProcessInvokerWrapper]   Persist current code page: 'True'
+[2022-01-10 08:44:23Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2022-01-10 08:44:23Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2022-01-10 08:44:23Z INFO ProcessInvokerWrapper] Process started with process id 6720, waiting for process exit.
+[2022-01-10 08:44:23Z INFO JobServerQueue] Try to append 1 batches web console lines for record '6e7a0969-0c16-51a0-2d7e-99f4c766d063', success rate: 1/1.
+[2022-01-10 08:44:23Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'f73c4d64-aa16-5fdd-77c5-d1a58e6d15f1', success rate: 1/1.
+[2022-01-10 08:44:24Z INFO JobServerQueue] Try to upload 1 log files or attachments, success rate: 1/1.
+[2022-01-10 08:44:24Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'f73c4d64-aa16-5fdd-77c5-d1a58e6d15f1', success rate: 1/1.
+[2022-01-10 08:44:25Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'f73c4d64-aa16-5fdd-77c5-d1a58e6d15f1', success rate: 1/1.
+[2022-01-10 08:44:30Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'f73c4d64-aa16-5fdd-77c5-d1a58e6d15f1', success rate: 1/1.
+[2022-01-10 08:44:33Z INFO HostContext] Well known directory 'Bin': 'E:\medisage\actions-runner\bin'
+[2022-01-10 08:44:33Z INFO HostContext] Well known directory 'Root': 'E:\medisage\actions-runner'
+[2022-01-10 08:44:33Z INFO HostContext] Well known directory 'Work': 'E:\medisage\actions-runner\_work'
+[2022-01-10 08:44:43Z INFO HostContext] Well known directory 'Bin': 'E:\medisage\actions-runner\bin'
+[2022-01-10 08:44:43Z INFO HostContext] Well known directory 'Root': 'E:\medisage\actions-runner'
+[2022-01-10 08:44:43Z INFO HostContext] Well known directory 'Work': 'E:\medisage\actions-runner\_work'
+[2022-01-10 08:44:46Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'f73c4d64-aa16-5fdd-77c5-d1a58e6d15f1', success rate: 1/1.
+[2022-01-10 08:44:53Z INFO HostContext] Well known directory 'Bin': 'E:\medisage\actions-runner\bin'
+[2022-01-10 08:44:53Z INFO HostContext] Well known directory 'Root': 'E:\medisage\actions-runner'
+[2022-01-10 08:44:53Z INFO HostContext] Well known directory 'Work': 'E:\medisage\actions-runner\_work'
+[2022-01-10 08:45:03Z INFO HostContext] Well known directory 'Bin': 'E:\medisage\actions-runner\bin'
+[2022-01-10 08:45:03Z INFO HostContext] Well known directory 'Root': 'E:\medisage\actions-runner'
+[2022-01-10 08:45:03Z INFO HostContext] Well known directory 'Work': 'E:\medisage\actions-runner\_work'
+[2022-01-10 08:45:03Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'f73c4d64-aa16-5fdd-77c5-d1a58e6d15f1', success rate: 1/1.
+[2022-01-10 08:45:10Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'f73c4d64-aa16-5fdd-77c5-d1a58e6d15f1', success rate: 1/1.
+[2022-01-10 08:45:12Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2022-01-10 08:45:12Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2022-01-10 08:45:12Z INFO ProcessInvokerWrapper] Finished process 6720 with exit code 0, and elapsed time 00:00:49.7627497.
+[2022-01-10 08:45:12Z INFO StepsRunner] Step result: 
+[2022-01-10 08:45:12Z INFO StepsRunner] No need for updating job result with current step result 'Succeeded'.
+[2022-01-10 08:45:12Z INFO StepsRunner] Current state: job state = ''
+[2022-01-10 08:45:12Z INFO StepsRunner] Processing step: DisplayName='Run npm i'
+[2022-01-10 08:45:12Z INFO StepsRunner] Evaluating: success()
+[2022-01-10 08:45:12Z INFO StepsRunner] Result: true
+[2022-01-10 08:45:12Z INFO StepsRunner] Starting the step.
+[2022-01-10 08:45:12Z INFO HostContext] Well known directory 'Bin': 'E:\medisage\actions-runner\bin'
+[2022-01-10 08:45:12Z INFO HostContext] Well known directory 'Root': 'E:\medisage\actions-runner'
+[2022-01-10 08:45:12Z INFO HostContext] Well known directory 'Work': 'E:\medisage\actions-runner\_work'
+[2022-01-10 08:45:12Z INFO StepsRunner] Which: 'chcp'
+[2022-01-10 08:45:12Z INFO StepsRunner] Location: 'C:\Windows\system32\chcp.COM'
+[2022-01-10 08:45:12Z INFO ProcessInvokerWrapper] Starting process:
+[2022-01-10 08:45:12Z INFO ProcessInvokerWrapper]   File name: 'C:\Windows\system32\chcp.COM'
+[2022-01-10 08:45:12Z INFO ProcessInvokerWrapper]   Arguments: '65001'
+[2022-01-10 08:45:12Z INFO ProcessInvokerWrapper]   Working directory: 'E:\medisage\actions-runner\_work'
+[2022-01-10 08:45:12Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2022-01-10 08:45:12Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2022-01-10 08:45:12Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2022-01-10 08:45:12Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2022-01-10 08:45:12Z INFO ProcessInvokerWrapper]   Persist current code page: 'True'
+[2022-01-10 08:45:12Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2022-01-10 08:45:12Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2022-01-10 08:45:12Z INFO ProcessInvokerWrapper] Process started with process id 8608, waiting for process exit.
+[2022-01-10 08:45:12Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2022-01-10 08:45:12Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2022-01-10 08:45:12Z INFO ProcessInvokerWrapper] Finished process 8608 with exit code 0, and elapsed time 00:00:00.0105735.
+[2022-01-10 08:45:12Z INFO StepsRunner] Successfully returned to code page 65001 (UTF8)
+[2022-01-10 08:45:12Z INFO HostContext] Well known directory 'Bin': 'E:\medisage\actions-runner\bin'
+[2022-01-10 08:45:12Z INFO HostContext] Well known directory 'Root': 'E:\medisage\actions-runner'
+[2022-01-10 08:45:12Z INFO HostContext] Well known directory 'Work': 'E:\medisage\actions-runner\_work'
+[2022-01-10 08:45:12Z INFO HostContext] Well known directory 'Temp': 'E:\medisage\actions-runner\_work\_temp'
+[2022-01-10 08:45:12Z INFO ActionRunner] Write event payload to E:\medisage\actions-runner\_work\_temp\_github_workflow\event.json
+[2022-01-10 08:45:12Z INFO HostContext] Well known directory 'Bin': 'E:\medisage\actions-runner\bin'
+[2022-01-10 08:45:12Z INFO HostContext] Well known directory 'Root': 'E:\medisage\actions-runner'
+[2022-01-10 08:45:12Z INFO HostContext] Well known directory 'Work': 'E:\medisage\actions-runner\_work'
+[2022-01-10 08:45:12Z INFO HostContext] Well known directory 'Temp': 'E:\medisage\actions-runner\_work\_temp'
+[2022-01-10 08:45:12Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IFileCommandExtension'
+[2022-01-10 08:45:12Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IActionCommandExtension'
+[2022-01-10 08:45:12Z INFO ActionCommandManager] Register action command extension for command internal-set-repo-path
+[2022-01-10 08:45:12Z INFO ActionCommandManager] Register action command extension for command set-env
+[2022-01-10 08:45:12Z INFO ActionCommandManager] Register action command extension for command set-output
+[2022-01-10 08:45:12Z INFO ActionCommandManager] Register action command extension for command save-state
+[2022-01-10 08:45:12Z INFO ActionCommandManager] Register action command extension for command add-path
+[2022-01-10 08:45:12Z INFO ActionCommandManager] Register action command extension for command add-mask
+[2022-01-10 08:45:12Z INFO ActionCommandManager] Register action command extension for command add-matcher
+[2022-01-10 08:45:12Z INFO ActionCommandManager] Register action command extension for command remove-matcher
+[2022-01-10 08:45:12Z INFO ActionCommandManager] Register action command extension for command warning
+[2022-01-10 08:45:12Z INFO ActionCommandManager] Register action command extension for command error
+[2022-01-10 08:45:12Z INFO ActionCommandManager] Register action command extension for command notice
+[2022-01-10 08:45:12Z INFO ActionCommandManager] Register action command extension for command debug
+[2022-01-10 08:45:12Z INFO ActionCommandManager] Register action command extension for command group
+[2022-01-10 08:45:12Z INFO ActionCommandManager] Register action command extension for command endgroup
+[2022-01-10 08:45:12Z INFO ActionCommandManager] Register action command extension for command echo
+[2022-01-10 08:45:12Z INFO ScriptHandler] Which: 'pwsh'
+[2022-01-10 08:45:12Z INFO ScriptHandler] pwsh: command not found. Make sure 'pwsh' is installed and its location included in the 'Path' environment variable.
+[2022-01-10 08:45:12Z INFO ScriptHandler] Defaulting to powershell
+[2022-01-10 08:45:12Z INFO ScriptHandler] Which: 'powershell'
+[2022-01-10 08:45:12Z INFO ScriptHandler] Location: 'C:\Windows\System32\WindowsPowerShell\v1.0\powershell.EXE'
+[2022-01-10 08:45:12Z INFO HostContext] Well known directory 'Bin': 'E:\medisage\actions-runner\bin'
+[2022-01-10 08:45:12Z INFO HostContext] Well known directory 'Root': 'E:\medisage\actions-runner'
+[2022-01-10 08:45:12Z INFO HostContext] Well known directory 'Work': 'E:\medisage\actions-runner\_work'
+[2022-01-10 08:45:12Z INFO HostContext] Well known directory 'Temp': 'E:\medisage\actions-runner\_work\_temp'
+[2022-01-10 08:45:12Z INFO ScriptHandler] Which: 'pwsh'
+[2022-01-10 08:45:12Z INFO ScriptHandler] pwsh: command not found. Make sure 'pwsh' is installed and its location included in the 'Path' environment variable.
+[2022-01-10 08:45:12Z INFO ScriptHandler] Defaulting to powershell
+[2022-01-10 08:45:12Z INFO ScriptHandler] Which: 'powershell'
+[2022-01-10 08:45:12Z INFO ScriptHandler] Location: 'C:\Windows\System32\WindowsPowerShell\v1.0\powershell.EXE'
+[2022-01-10 08:45:12Z INFO ProcessInvokerWrapper] Starting process:
+[2022-01-10 08:45:12Z INFO ProcessInvokerWrapper]   File name: 'C:\Windows\System32\WindowsPowerShell\v1.0\powershell.EXE'
+[2022-01-10 08:45:12Z INFO ProcessInvokerWrapper]   Arguments: '-command ". 'E:\medisage\actions-runner\_work\_temp\caae4a75-eeb6-4f79-936f-ea296cb8ee0b.ps1'"'
+[2022-01-10 08:45:12Z INFO ProcessInvokerWrapper]   Working directory: 'E:\medisage\actions-runner\_work\medisage\medisage'
+[2022-01-10 08:45:12Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2022-01-10 08:45:12Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2022-01-10 08:45:12Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2022-01-10 08:45:12Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2022-01-10 08:45:12Z INFO ProcessInvokerWrapper]   Persist current code page: 'True'
+[2022-01-10 08:45:12Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2022-01-10 08:45:12Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2022-01-10 08:45:12Z INFO ProcessInvokerWrapper] Process started with process id 6920, waiting for process exit.
+[2022-01-10 08:45:13Z INFO HostContext] Well known directory 'Bin': 'E:\medisage\actions-runner\bin'
+[2022-01-10 08:45:13Z INFO HostContext] Well known directory 'Root': 'E:\medisage\actions-runner'
+[2022-01-10 08:45:13Z INFO HostContext] Well known directory 'Work': 'E:\medisage\actions-runner\_work'
+[2022-01-10 08:45:13Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'f73c4d64-aa16-5fdd-77c5-d1a58e6d15f1', success rate: 1/1.
+[2022-01-10 08:45:13Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'e2375f30-9289-5e9b-27ef-8ad2cb6853c8', success rate: 1/1.
+[2022-01-10 08:45:14Z INFO JobServerQueue] Try to upload 1 log files or attachments, success rate: 1/1.
+[2022-01-10 08:45:17Z INFO JobServerQueue] Stop aggressive process web console line queue.
+[2022-01-10 08:45:23Z INFO HostContext] Well known directory 'Bin': 'E:\medisage\actions-runner\bin'
+[2022-01-10 08:45:23Z INFO HostContext] Well known directory 'Root': 'E:\medisage\actions-runner'
+[2022-01-10 08:45:23Z INFO HostContext] Well known directory 'Work': 'E:\medisage\actions-runner\_work'
+[2022-01-10 08:45:33Z INFO HostContext] Well known directory 'Bin': 'E:\medisage\actions-runner\bin'
+[2022-01-10 08:45:33Z INFO HostContext] Well known directory 'Root': 'E:\medisage\actions-runner'
+[2022-01-10 08:45:33Z INFO HostContext] Well known directory 'Work': 'E:\medisage\actions-runner\_work'
+[2022-01-10 08:45:43Z INFO HostContext] Well known directory 'Bin': 'E:\medisage\actions-runner\bin'
+[2022-01-10 08:45:43Z INFO HostContext] Well known directory 'Root': 'E:\medisage\actions-runner'
+[2022-01-10 08:45:43Z INFO HostContext] Well known directory 'Work': 'E:\medisage\actions-runner\_work'
+[2022-01-10 08:45:53Z INFO HostContext] Well known directory 'Bin': 'E:\medisage\actions-runner\bin'
+[2022-01-10 08:45:53Z INFO HostContext] Well known directory 'Root': 'E:\medisage\actions-runner'
+[2022-01-10 08:45:53Z INFO HostContext] Well known directory 'Work': 'E:\medisage\actions-runner\_work'
+[2022-01-10 08:46:03Z INFO HostContext] Well known directory 'Bin': 'E:\medisage\actions-runner\bin'
+[2022-01-10 08:46:03Z INFO HostContext] Well known directory 'Root': 'E:\medisage\actions-runner'
+[2022-01-10 08:46:03Z INFO HostContext] Well known directory 'Work': 'E:\medisage\actions-runner\_work'
+[2022-01-10 08:46:13Z INFO HostContext] Well known directory 'Bin': 'E:\medisage\actions-runner\bin'
+[2022-01-10 08:46:13Z INFO HostContext] Well known directory 'Root': 'E:\medisage\actions-runner'
+[2022-01-10 08:46:13Z INFO HostContext] Well known directory 'Work': 'E:\medisage\actions-runner\_work'
+[2022-01-10 08:46:23Z INFO HostContext] Well known directory 'Bin': 'E:\medisage\actions-runner\bin'
+[2022-01-10 08:46:23Z INFO HostContext] Well known directory 'Root': 'E:\medisage\actions-runner'
+[2022-01-10 08:46:23Z INFO HostContext] Well known directory 'Work': 'E:\medisage\actions-runner\_work'
+[2022-01-10 08:46:33Z INFO HostContext] Well known directory 'Bin': 'E:\medisage\actions-runner\bin'
+[2022-01-10 08:46:33Z INFO HostContext] Well known directory 'Root': 'E:\medisage\actions-runner'
+[2022-01-10 08:46:33Z INFO HostContext] Well known directory 'Work': 'E:\medisage\actions-runner\_work'
+[2022-01-10 08:46:43Z INFO HostContext] Well known directory 'Bin': 'E:\medisage\actions-runner\bin'
+[2022-01-10 08:46:43Z INFO HostContext] Well known directory 'Root': 'E:\medisage\actions-runner'
+[2022-01-10 08:46:43Z INFO HostContext] Well known directory 'Work': 'E:\medisage\actions-runner\_work'
+[2022-01-10 08:46:53Z INFO HostContext] Well known directory 'Bin': 'E:\medisage\actions-runner\bin'
+[2022-01-10 08:46:53Z INFO HostContext] Well known directory 'Root': 'E:\medisage\actions-runner'
+[2022-01-10 08:46:53Z INFO HostContext] Well known directory 'Work': 'E:\medisage\actions-runner\_work'
+[2022-01-10 08:47:03Z INFO HostContext] Well known directory 'Bin': 'E:\medisage\actions-runner\bin'
+[2022-01-10 08:47:03Z INFO HostContext] Well known directory 'Root': 'E:\medisage\actions-runner'
+[2022-01-10 08:47:03Z INFO HostContext] Well known directory 'Work': 'E:\medisage\actions-runner\_work'
+[2022-01-10 08:47:13Z INFO HostContext] Well known directory 'Bin': 'E:\medisage\actions-runner\bin'
+[2022-01-10 08:47:13Z INFO HostContext] Well known directory 'Root': 'E:\medisage\actions-runner'
+[2022-01-10 08:47:13Z INFO HostContext] Well known directory 'Work': 'E:\medisage\actions-runner\_work'
+[2022-01-10 08:47:23Z INFO HostContext] Well known directory 'Bin': 'E:\medisage\actions-runner\bin'
+[2022-01-10 08:47:23Z INFO HostContext] Well known directory 'Root': 'E:\medisage\actions-runner'
+[2022-01-10 08:47:23Z INFO HostContext] Well known directory 'Work': 'E:\medisage\actions-runner\_work'
+[2022-01-10 08:47:33Z INFO HostContext] Well known directory 'Bin': 'E:\medisage\actions-runner\bin'
+[2022-01-10 08:47:33Z INFO HostContext] Well known directory 'Root': 'E:\medisage\actions-runner'
+[2022-01-10 08:47:33Z INFO HostContext] Well known directory 'Work': 'E:\medisage\actions-runner\_work'
+[2022-01-10 08:47:43Z INFO HostContext] Well known directory 'Bin': 'E:\medisage\actions-runner\bin'
+[2022-01-10 08:47:43Z INFO HostContext] Well known directory 'Root': 'E:\medisage\actions-runner'
+[2022-01-10 08:47:43Z INFO HostContext] Well known directory 'Work': 'E:\medisage\actions-runner\_work'
+[2022-01-10 08:47:53Z INFO HostContext] Well known directory 'Bin': 'E:\medisage\actions-runner\bin'
+[2022-01-10 08:47:53Z INFO HostContext] Well known directory 'Root': 'E:\medisage\actions-runner'
+[2022-01-10 08:47:53Z INFO HostContext] Well known directory 'Work': 'E:\medisage\actions-runner\_work'
+[2022-01-10 08:48:03Z INFO HostContext] Well known directory 'Bin': 'E:\medisage\actions-runner\bin'
+[2022-01-10 08:48:03Z INFO HostContext] Well known directory 'Root': 'E:\medisage\actions-runner'
+[2022-01-10 08:48:03Z INFO HostContext] Well known directory 'Work': 'E:\medisage\actions-runner\_work'
+[2022-01-10 08:48:13Z INFO HostContext] Well known directory 'Bin': 'E:\medisage\actions-runner\bin'
+[2022-01-10 08:48:13Z INFO HostContext] Well known directory 'Root': 'E:\medisage\actions-runner'
+[2022-01-10 08:48:13Z INFO HostContext] Well known directory 'Work': 'E:\medisage\actions-runner\_work'
+[2022-01-10 08:48:22Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'e2375f30-9289-5e9b-27ef-8ad2cb6853c8', success rate: 1/1.
+[2022-01-10 08:48:23Z INFO HostContext] Well known directory 'Bin': 'E:\medisage\actions-runner\bin'
+[2022-01-10 08:48:23Z INFO HostContext] Well known directory 'Root': 'E:\medisage\actions-runner'
+[2022-01-10 08:48:23Z INFO HostContext] Well known directory 'Work': 'E:\medisage\actions-runner\_work'
+[2022-01-10 08:48:25Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'e2375f30-9289-5e9b-27ef-8ad2cb6853c8', success rate: 1/1.
+[2022-01-10 08:48:26Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'e2375f30-9289-5e9b-27ef-8ad2cb6853c8', success rate: 1/1.
+[2022-01-10 08:48:27Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'e2375f30-9289-5e9b-27ef-8ad2cb6853c8', success rate: 1/1.
+[2022-01-10 08:48:28Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2022-01-10 08:48:28Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2022-01-10 08:48:28Z INFO ProcessInvokerWrapper] Finished process 6920 with exit code 0, and elapsed time 00:03:15.0888901.
+[2022-01-10 08:48:28Z INFO StepsRunner] Step result: 
+[2022-01-10 08:48:28Z INFO StepsRunner] No need for updating job result with current step result 'Succeeded'.
+[2022-01-10 08:48:28Z INFO StepsRunner] Current state: job state = ''
+[2022-01-10 08:48:28Z INFO StepsRunner] Processing step: DisplayName='Run npm test'
+[2022-01-10 08:48:28Z INFO StepsRunner] Evaluating: success()
+[2022-01-10 08:48:28Z INFO StepsRunner] Result: true
+[2022-01-10 08:48:28Z INFO StepsRunner] Starting the step.
+[2022-01-10 08:48:28Z INFO HostContext] Well known directory 'Bin': 'E:\medisage\actions-runner\bin'
+[2022-01-10 08:48:28Z INFO HostContext] Well known directory 'Root': 'E:\medisage\actions-runner'
+[2022-01-10 08:48:28Z INFO HostContext] Well known directory 'Work': 'E:\medisage\actions-runner\_work'
+[2022-01-10 08:48:28Z INFO StepsRunner] Which: 'chcp'
+[2022-01-10 08:48:28Z INFO StepsRunner] Location: 'C:\Windows\system32\chcp.COM'
+[2022-01-10 08:48:28Z INFO ProcessInvokerWrapper] Starting process:
+[2022-01-10 08:48:28Z INFO ProcessInvokerWrapper]   File name: 'C:\Windows\system32\chcp.COM'
+[2022-01-10 08:48:28Z INFO ProcessInvokerWrapper]   Arguments: '65001'
+[2022-01-10 08:48:28Z INFO ProcessInvokerWrapper]   Working directory: 'E:\medisage\actions-runner\_work'
+[2022-01-10 08:48:28Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2022-01-10 08:48:28Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2022-01-10 08:48:28Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2022-01-10 08:48:28Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2022-01-10 08:48:28Z INFO ProcessInvokerWrapper]   Persist current code page: 'True'
+[2022-01-10 08:48:28Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2022-01-10 08:48:28Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2022-01-10 08:48:28Z INFO ProcessInvokerWrapper] Process started with process id 8324, waiting for process exit.
+[2022-01-10 08:48:28Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2022-01-10 08:48:28Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2022-01-10 08:48:28Z INFO ProcessInvokerWrapper] Finished process 8324 with exit code 0, and elapsed time 00:00:00.0119366.
+[2022-01-10 08:48:28Z INFO StepsRunner] Successfully returned to code page 65001 (UTF8)
+[2022-01-10 08:48:28Z INFO HostContext] Well known directory 'Bin': 'E:\medisage\actions-runner\bin'
+[2022-01-10 08:48:28Z INFO HostContext] Well known directory 'Root': 'E:\medisage\actions-runner'
+[2022-01-10 08:48:28Z INFO HostContext] Well known directory 'Work': 'E:\medisage\actions-runner\_work'
+[2022-01-10 08:48:28Z INFO HostContext] Well known directory 'Temp': 'E:\medisage\actions-runner\_work\_temp'
+[2022-01-10 08:48:28Z INFO ActionRunner] Write event payload to E:\medisage\actions-runner\_work\_temp\_github_workflow\event.json
+[2022-01-10 08:48:28Z INFO HostContext] Well known directory 'Bin': 'E:\medisage\actions-runner\bin'
+[2022-01-10 08:48:28Z INFO HostContext] Well known directory 'Root': 'E:\medisage\actions-runner'
+[2022-01-10 08:48:28Z INFO HostContext] Well known directory 'Work': 'E:\medisage\actions-runner\_work'
+[2022-01-10 08:48:28Z INFO HostContext] Well known directory 'Temp': 'E:\medisage\actions-runner\_work\_temp'
+[2022-01-10 08:48:28Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IFileCommandExtension'
+[2022-01-10 08:48:28Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IActionCommandExtension'
+[2022-01-10 08:48:28Z INFO ActionCommandManager] Register action command extension for command internal-set-repo-path
+[2022-01-10 08:48:28Z INFO ActionCommandManager] Register action command extension for command set-env
+[2022-01-10 08:48:28Z INFO ActionCommandManager] Register action command extension for command set-output
+[2022-01-10 08:48:28Z INFO ActionCommandManager] Register action command extension for command save-state
+[2022-01-10 08:48:28Z INFO ActionCommandManager] Register action command extension for command add-path
+[2022-01-10 08:48:28Z INFO ActionCommandManager] Register action command extension for command add-mask
+[2022-01-10 08:48:28Z INFO ActionCommandManager] Register action command extension for command add-matcher
+[2022-01-10 08:48:28Z INFO ActionCommandManager] Register action command extension for command remove-matcher
+[2022-01-10 08:48:28Z INFO ActionCommandManager] Register action command extension for command warning
+[2022-01-10 08:48:28Z INFO ActionCommandManager] Register action command extension for command error
+[2022-01-10 08:48:28Z INFO ActionCommandManager] Register action command extension for command notice
+[2022-01-10 08:48:28Z INFO ActionCommandManager] Register action command extension for command debug
+[2022-01-10 08:48:28Z INFO ActionCommandManager] Register action command extension for command group
+[2022-01-10 08:48:28Z INFO ActionCommandManager] Register action command extension for command endgroup
+[2022-01-10 08:48:28Z INFO ActionCommandManager] Register action command extension for command echo
+[2022-01-10 08:48:28Z INFO ScriptHandler] Which: 'pwsh'
+[2022-01-10 08:48:28Z INFO ScriptHandler] pwsh: command not found. Make sure 'pwsh' is installed and its location included in the 'Path' environment variable.
+[2022-01-10 08:48:28Z INFO ScriptHandler] Defaulting to powershell
+[2022-01-10 08:48:28Z INFO ScriptHandler] Which: 'powershell'
+[2022-01-10 08:48:28Z INFO ScriptHandler] Location: 'C:\Windows\System32\WindowsPowerShell\v1.0\powershell.EXE'
+[2022-01-10 08:48:28Z INFO HostContext] Well known directory 'Bin': 'E:\medisage\actions-runner\bin'
+[2022-01-10 08:48:28Z INFO HostContext] Well known directory 'Root': 'E:\medisage\actions-runner'
+[2022-01-10 08:48:28Z INFO HostContext] Well known directory 'Work': 'E:\medisage\actions-runner\_work'
+[2022-01-10 08:48:28Z INFO HostContext] Well known directory 'Temp': 'E:\medisage\actions-runner\_work\_temp'
+[2022-01-10 08:48:28Z INFO ScriptHandler] Which: 'pwsh'
+[2022-01-10 08:48:28Z INFO ScriptHandler] pwsh: command not found. Make sure 'pwsh' is installed and its location included in the 'Path' environment variable.
+[2022-01-10 08:48:28Z INFO ScriptHandler] Defaulting to powershell
+[2022-01-10 08:48:28Z INFO ScriptHandler] Which: 'powershell'
+[2022-01-10 08:48:28Z INFO ScriptHandler] Location: 'C:\Windows\System32\WindowsPowerShell\v1.0\powershell.EXE'
+[2022-01-10 08:48:28Z INFO ProcessInvokerWrapper] Starting process:
+[2022-01-10 08:48:28Z INFO ProcessInvokerWrapper]   File name: 'C:\Windows\System32\WindowsPowerShell\v1.0\powershell.EXE'
+[2022-01-10 08:48:28Z INFO ProcessInvokerWrapper]   Arguments: '-command ". 'E:\medisage\actions-runner\_work\_temp\6f06140d-eec6-4e70-927c-d7db74df3898.ps1'"'
+[2022-01-10 08:48:28Z INFO ProcessInvokerWrapper]   Working directory: 'E:\medisage\actions-runner\_work\medisage\medisage'
+[2022-01-10 08:48:28Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2022-01-10 08:48:28Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2022-01-10 08:48:28Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2022-01-10 08:48:28Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2022-01-10 08:48:28Z INFO ProcessInvokerWrapper]   Persist current code page: 'True'
+[2022-01-10 08:48:28Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2022-01-10 08:48:28Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2022-01-10 08:48:28Z INFO ProcessInvokerWrapper] Process started with process id 5988, waiting for process exit.
+[2022-01-10 08:48:28Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'e2375f30-9289-5e9b-27ef-8ad2cb6853c8', success rate: 1/1.
+[2022-01-10 08:48:29Z INFO JobServerQueue] Try to upload 1 log files or attachments, success rate: 1/1.
+[2022-01-10 08:48:29Z INFO JobServerQueue] Try to append 1 batches web console lines for record '7fb1390b-d4d4-52b4-d892-c805ca5826ad', success rate: 1/1.
+[2022-01-10 08:48:29Z INFO JobServerQueue] Try to append 1 batches web console lines for record '7fb1390b-d4d4-52b4-d892-c805ca5826ad', success rate: 1/1.
+[2022-01-10 08:48:33Z INFO HostContext] Well known directory 'Bin': 'E:\medisage\actions-runner\bin'
+[2022-01-10 08:48:33Z INFO HostContext] Well known directory 'Root': 'E:\medisage\actions-runner'
+[2022-01-10 08:48:33Z INFO HostContext] Well known directory 'Work': 'E:\medisage\actions-runner\_work'
+[2022-01-10 08:48:35Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2022-01-10 08:48:35Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2022-01-10 08:48:35Z INFO JobServerQueue] Try to append 1 batches web console lines for record '7fb1390b-d4d4-52b4-d892-c805ca5826ad', success rate: 1/1.
+[2022-01-10 08:48:35Z INFO ProcessInvokerWrapper] Finished process 5988 with exit code 1, and elapsed time 00:00:07.5713061.
+[2022-01-10 08:48:35Z INFO StepsRunner] Step result: Failed
+[2022-01-10 08:48:35Z INFO StepsRunner] Update job result with current step result 'Failed'.
+[2022-01-10 08:48:35Z INFO StepsRunner] Current state: job state = 'Failed'
+[2022-01-10 08:48:35Z INFO StepsRunner] Processing step: DisplayName='Run npm run build'
+[2022-01-10 08:48:35Z INFO StepsRunner] Evaluating: success()
+[2022-01-10 08:48:35Z INFO StepsRunner] Result: false
+[2022-01-10 08:48:35Z INFO StepsRunner] Skipping step due to condition evaluation.
+[2022-01-10 08:48:35Z INFO StepsRunner] No need for updating job result with current step result 'Skipped'.
+[2022-01-10 08:48:35Z INFO StepsRunner] Current state: job state = 'Failed'
+[2022-01-10 08:48:35Z INFO StepsRunner] Processing step: DisplayName='Post Use Node.js 14.x'
+[2022-01-10 08:48:35Z INFO StepsRunner] Evaluating: success()
+[2022-01-10 08:48:35Z INFO StepsRunner] Result: false
+[2022-01-10 08:48:35Z INFO StepsRunner] Skipping step due to condition evaluation.
+[2022-01-10 08:48:35Z INFO StepsRunner] No need for updating job result with current step result 'Skipped'.
+[2022-01-10 08:48:35Z INFO StepsRunner] Current state: job state = 'Failed'
+[2022-01-10 08:48:35Z INFO StepsRunner] Processing step: DisplayName='Post Run actions/checkout@v2'
+[2022-01-10 08:48:35Z INFO StepsRunner] Evaluating: always()
+[2022-01-10 08:48:35Z INFO StepsRunner] Result: true
+[2022-01-10 08:48:35Z INFO StepsRunner] Starting the step.
+[2022-01-10 08:48:35Z INFO HostContext] Well known directory 'Bin': 'E:\medisage\actions-runner\bin'
+[2022-01-10 08:48:35Z INFO HostContext] Well known directory 'Root': 'E:\medisage\actions-runner'
+[2022-01-10 08:48:35Z INFO HostContext] Well known directory 'Work': 'E:\medisage\actions-runner\_work'
+[2022-01-10 08:48:35Z INFO StepsRunner] Which: 'chcp'
+[2022-01-10 08:48:35Z INFO StepsRunner] Location: 'C:\Windows\system32\chcp.COM'
+[2022-01-10 08:48:35Z INFO ProcessInvokerWrapper] Starting process:
+[2022-01-10 08:48:35Z INFO ProcessInvokerWrapper]   File name: 'C:\Windows\system32\chcp.COM'
+[2022-01-10 08:48:35Z INFO ProcessInvokerWrapper]   Arguments: '65001'
+[2022-01-10 08:48:35Z INFO ProcessInvokerWrapper]   Working directory: 'E:\medisage\actions-runner\_work'
+[2022-01-10 08:48:35Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2022-01-10 08:48:35Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2022-01-10 08:48:35Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2022-01-10 08:48:35Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2022-01-10 08:48:35Z INFO ProcessInvokerWrapper]   Persist current code page: 'True'
+[2022-01-10 08:48:35Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2022-01-10 08:48:35Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2022-01-10 08:48:35Z INFO ProcessInvokerWrapper] Process started with process id 9944, waiting for process exit.
+[2022-01-10 08:48:35Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2022-01-10 08:48:35Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2022-01-10 08:48:35Z INFO ProcessInvokerWrapper] Finished process 9944 with exit code 0, and elapsed time 00:00:00.0124151.
+[2022-01-10 08:48:35Z INFO StepsRunner] Successfully returned to code page 65001 (UTF8)
+[2022-01-10 08:48:35Z INFO HostContext] Well known directory 'Bin': 'E:\medisage\actions-runner\bin'
+[2022-01-10 08:48:35Z INFO HostContext] Well known directory 'Root': 'E:\medisage\actions-runner'
+[2022-01-10 08:48:35Z INFO HostContext] Well known directory 'Work': 'E:\medisage\actions-runner\_work'
+[2022-01-10 08:48:35Z INFO HostContext] Well known directory 'Actions': 'E:\medisage\actions-runner\_work\_actions'
+[2022-01-10 08:48:35Z INFO ActionManager] Load action that reference repository from 'E:\medisage\actions-runner\_work\_actions\actions\checkout\v2'
+[2022-01-10 08:48:35Z INFO HostContext] Well known directory 'Bin': 'E:\medisage\actions-runner\bin'
+[2022-01-10 08:48:35Z INFO HostContext] Well known directory 'Root': 'E:\medisage\actions-runner'
+[2022-01-10 08:48:35Z INFO HostContext] Well known directory 'Work': 'E:\medisage\actions-runner\_work'
+[2022-01-10 08:48:35Z INFO HostContext] Well known directory 'Actions': 'E:\medisage\actions-runner\_work\_actions'
+[2022-01-10 08:48:35Z INFO ActionManifestManager] Loaded action.yml file: {
+  "name": "Checkout",
+  "description": "Checkout a Git repository at a particular version",
+  "inputs": {
+    "type": 2,
+    "map": [
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 4,
+          "col": 3,
+          "lit": "repository"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 6,
+          "col": 14,
+          "expr": "github.repository"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 7,
+          "col": 3,
+          "lit": "ref"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 12,
+          "col": 3,
+          "lit": "token"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 24,
+          "col": 14,
+          "expr": "github.token"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 25,
+          "col": 3,
+          "lit": "ssh-key"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 37,
+          "col": 3,
+          "lit": "ssh-known-hosts"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 42,
+          "col": 3,
+          "lit": "ssh-strict"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 47,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 48,
+          "col": 3,
+          "lit": "persist-credentials"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 50,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 51,
+          "col": 3,
+          "lit": "path"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 53,
+          "col": 3,
+          "lit": "clean"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 55,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 56,
+          "col": 3,
+          "lit": "fetch-depth"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 58,
+          "col": 14,
+          "lit": "1"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 59,
+          "col": 3,
+          "lit": "lfs"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 61,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 62,
+          "col": 3,
+          "lit": "submodules"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 70,
+          "col": 14,
+          "lit": "false"
+        }
+      }
+    ]
+  },
+  "execution": {
+    "executionType": "nodeJS",
+    "hasPre": false,
+    "hasPost": true,
+    "script": "dist/index.js",
+    "pre": null,
+    "post": "dist/index.js",
+    "nodeVersion": "node12",
+    "cleanupCondition": "always()",
+    "initCondition": "always()"
+  },
+  "deprecated": null
+}
+[2022-01-10 08:48:35Z INFO ActionManager] Action pre node.js file: N/A.
+[2022-01-10 08:48:35Z INFO ActionManager] Action node.js file: dist/index.js.
+[2022-01-10 08:48:35Z INFO ActionManager] Action post node.js file: dist/index.js.
+[2022-01-10 08:48:35Z INFO HostContext] Well known directory 'Bin': 'E:\medisage\actions-runner\bin'
+[2022-01-10 08:48:35Z INFO HostContext] Well known directory 'Root': 'E:\medisage\actions-runner'
+[2022-01-10 08:48:35Z INFO HostContext] Well known directory 'Work': 'E:\medisage\actions-runner\_work'
+[2022-01-10 08:48:35Z INFO HostContext] Well known directory 'Temp': 'E:\medisage\actions-runner\_work\_temp'
+[2022-01-10 08:48:35Z INFO ActionRunner] Write event payload to E:\medisage\actions-runner\_work\_temp\_github_workflow\event.json
+[2022-01-10 08:48:35Z INFO HostContext] Well known directory 'Bin': 'E:\medisage\actions-runner\bin'
+[2022-01-10 08:48:35Z INFO HostContext] Well known directory 'Root': 'E:\medisage\actions-runner'
+[2022-01-10 08:48:35Z INFO HostContext] Well known directory 'Work': 'E:\medisage\actions-runner\_work'
+[2022-01-10 08:48:35Z INFO HostContext] Well known directory 'Temp': 'E:\medisage\actions-runner\_work\_temp'
+[2022-01-10 08:48:35Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IFileCommandExtension'
+[2022-01-10 08:48:35Z INFO ActionManifestManager] Input 'repository': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 6,
+  "col": 14,
+  "lit": "Shanawazkhan10/medisage"
+}
+[2022-01-10 08:48:35Z INFO ActionManifestManager] Input 'ref': default value evaluate result: ""
+[2022-01-10 08:48:35Z INFO ActionManifestManager] Input 'token': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 24,
+  "col": 14,
+  "lit": "***"
+}
+[2022-01-10 08:48:35Z INFO ActionManifestManager] Input 'ssh-key': default value evaluate result: ""
+[2022-01-10 08:48:35Z INFO ActionManifestManager] Input 'ssh-known-hosts': default value evaluate result: ""
+[2022-01-10 08:48:35Z INFO ActionManifestManager] Input 'ssh-strict': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 47,
+  "col": 14,
+  "lit": "true"
+}
+[2022-01-10 08:48:35Z INFO ActionManifestManager] Input 'persist-credentials': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 50,
+  "col": 14,
+  "lit": "true"
+}
+[2022-01-10 08:48:35Z INFO ActionManifestManager] Input 'path': default value evaluate result: ""
+[2022-01-10 08:48:35Z INFO ActionManifestManager] Input 'clean': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 55,
+  "col": 14,
+  "lit": "true"
+}
+[2022-01-10 08:48:35Z INFO ActionManifestManager] Input 'fetch-depth': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 58,
+  "col": 14,
+  "lit": "1"
+}
+[2022-01-10 08:48:35Z INFO ActionManifestManager] Input 'lfs': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 61,
+  "col": 14,
+  "lit": "false"
+}
+[2022-01-10 08:48:35Z INFO ActionManifestManager] Input 'submodules': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 70,
+  "col": 14,
+  "lit": "false"
+}
+[2022-01-10 08:48:35Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IActionCommandExtension'
+[2022-01-10 08:48:35Z INFO ActionCommandManager] Register action command extension for command internal-set-repo-path
+[2022-01-10 08:48:35Z INFO ActionCommandManager] Register action command extension for command set-env
+[2022-01-10 08:48:35Z INFO ActionCommandManager] Register action command extension for command set-output
+[2022-01-10 08:48:35Z INFO ActionCommandManager] Register action command extension for command save-state
+[2022-01-10 08:48:35Z INFO ActionCommandManager] Register action command extension for command add-path
+[2022-01-10 08:48:35Z INFO ActionCommandManager] Register action command extension for command add-mask
+[2022-01-10 08:48:35Z INFO ActionCommandManager] Register action command extension for command add-matcher
+[2022-01-10 08:48:35Z INFO ActionCommandManager] Register action command extension for command remove-matcher
+[2022-01-10 08:48:35Z INFO ActionCommandManager] Register action command extension for command warning
+[2022-01-10 08:48:35Z INFO ActionCommandManager] Register action command extension for command error
+[2022-01-10 08:48:35Z INFO ActionCommandManager] Register action command extension for command notice
+[2022-01-10 08:48:35Z INFO ActionCommandManager] Register action command extension for command debug
+[2022-01-10 08:48:35Z INFO ActionCommandManager] Register action command extension for command group
+[2022-01-10 08:48:35Z INFO ActionCommandManager] Register action command extension for command endgroup
+[2022-01-10 08:48:35Z INFO ActionCommandManager] Register action command extension for command echo
+[2022-01-10 08:48:35Z INFO HostContext] Well known directory 'Bin': 'E:\medisage\actions-runner\bin'
+[2022-01-10 08:48:35Z INFO HostContext] Well known directory 'Root': 'E:\medisage\actions-runner'
+[2022-01-10 08:48:35Z INFO HostContext] Well known directory 'Externals': 'E:\medisage\actions-runner\externals'
+[2022-01-10 08:48:35Z INFO ProcessInvokerWrapper] Starting process:
+[2022-01-10 08:48:35Z INFO ProcessInvokerWrapper]   File name: 'E:\medisage\actions-runner\externals\node12\bin\node.exe'
+[2022-01-10 08:48:35Z INFO ProcessInvokerWrapper]   Arguments: '"E:\medisage\actions-runner\_work\_actions\actions\checkout\v2\dist/index.js"'
+[2022-01-10 08:48:35Z INFO ProcessInvokerWrapper]   Working directory: 'E:\medisage\actions-runner\_work\medisage\medisage'
+[2022-01-10 08:48:35Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2022-01-10 08:48:35Z INFO ProcessInvokerWrapper]   Encoding web name: utf-8 ; code page: '65001'
+[2022-01-10 08:48:35Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2022-01-10 08:48:35Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2022-01-10 08:48:35Z INFO ProcessInvokerWrapper]   Persist current code page: 'True'
+[2022-01-10 08:48:35Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2022-01-10 08:48:35Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2022-01-10 08:48:35Z INFO ProcessInvokerWrapper] Process started with process id 9556, waiting for process exit.
+[2022-01-10 08:48:36Z INFO JobServerQueue] Try to upload 1 log files or attachments, success rate: 1/1.
+[2022-01-10 08:48:36Z INFO JobServerQueue] Try to append 3 batches web console lines for record '7fb1390b-d4d4-52b4-d892-c805ca5826ad', success rate: 3/3.
+[2022-01-10 08:48:37Z INFO JobServerQueue] Try to append 1 batches web console lines for record '3e38afca-f7e8-4908-af3a-8020c2e95f51', success rate: 1/1.
+[2022-01-10 08:48:38Z INFO AddMaskCommandExtension] Add new secret mask with length of 32
+[2022-01-10 08:48:39Z INFO JobServerQueue] Try to append 1 batches web console lines for record '3e38afca-f7e8-4908-af3a-8020c2e95f51', success rate: 1/1.
+[2022-01-10 08:48:39Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2022-01-10 08:48:39Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2022-01-10 08:48:39Z INFO ProcessInvokerWrapper] Finished process 9556 with exit code 0, and elapsed time 00:00:04.1876132.
+[2022-01-10 08:48:39Z INFO StepsRunner] Step result: 
+[2022-01-10 08:48:39Z INFO StepsRunner] No need for updating job result with current step result 'Succeeded'.
+[2022-01-10 08:48:39Z INFO StepsRunner] Current state: job state = 'Failed'
+[2022-01-10 08:48:39Z INFO JobRunner] Finalize job.
+[2022-01-10 08:48:39Z INFO HostContext] Well known directory 'Bin': 'E:\medisage\actions-runner\bin'
+[2022-01-10 08:48:39Z INFO HostContext] Well known directory 'Root': 'E:\medisage\actions-runner'
+[2022-01-10 08:48:39Z INFO HostContext] Well known directory 'Diag': 'E:\medisage\actions-runner\_diag'
+[2022-01-10 08:48:39Z INFO JobExtension] Initialize Env context
+[2022-01-10 08:48:39Z INFO JobExtension] Initialize steps context
+[2022-01-10 08:48:39Z INFO JobExtension] Total accessible running process: 191.
+[2022-01-10 08:48:39Z INFO JobExtension] Inspecting process environment variables. PID: 8316 (WUDFHost)
+[2022-01-10 08:48:39Z WARN JobExtension] Ignore exception during read process environment variables: Access is denied.
+[2022-01-10 08:48:39Z INFO JobExtension] Inspecting process environment variables. PID: 6332 (svchost)
+[2022-01-10 08:48:39Z WARN JobExtension] Ignore exception during read process environment variables: Access is denied.
+[2022-01-10 08:48:39Z INFO JobExtension] Inspecting process environment variables. PID: 1120 (svchost)
+[2022-01-10 08:48:39Z WARN JobExtension] Ignore exception during read process environment variables: Access is denied.
+[2022-01-10 08:48:39Z INFO JobExtension] Inspecting process environment variables. PID: 568 (WmiPrvSE)
+[2022-01-10 08:48:39Z WARN JobExtension] Ignore exception during read process environment variables: Access is denied.
+[2022-01-10 08:48:39Z INFO JobRunner] Job result after all job steps finish: Failed
+[2022-01-10 08:48:39Z INFO JobRunner] Completing the job execution context.
+[2022-01-10 08:48:39Z INFO JobRunner] Shutting down the job server queue.
+[2022-01-10 08:48:39Z INFO JobServerQueue] Fire signal to shutdown all queues.
+[2022-01-10 08:48:40Z INFO JobServerQueue] All queue process task stopped.
+[2022-01-10 08:48:40Z INFO JobServerQueue] Try to append 1 batches web console lines for record '3e38afca-f7e8-4908-af3a-8020c2e95f51', success rate: 1/1.
+[2022-01-10 08:48:41Z INFO JobServerQueue] Try to append 1 batches web console lines for record '7076e169-f354-480e-aec1-ce98e9e19b14', success rate: 1/1.
+[2022-01-10 08:48:41Z INFO JobServerQueue] Web console line queue drained.
+[2022-01-10 08:48:41Z INFO JobServerQueue] Uploading 3 files in one shot.
+[2022-01-10 08:48:42Z INFO JobServerQueue] Try to upload 3 log files or attachments, success rate: 3/3.
+[2022-01-10 08:48:42Z INFO JobServerQueue] File upload queue drained.
+[2022-01-10 08:48:43Z INFO JobServerQueue] Timeline update queue drained.
+[2022-01-10 08:48:43Z INFO JobServerQueue] All queue process tasks have been stopped, and all queues are drained.
+[2022-01-10 08:48:43Z INFO TempDirectoryManager] Cleaning runner temp folder: E:\medisage\actions-runner\_work\_temp
+[2022-01-10 08:48:45Z INFO HostContext] Well known directory 'Bin': 'E:\medisage\actions-runner\bin'
+[2022-01-10 08:48:45Z INFO HostContext] Well known directory 'Root': 'E:\medisage\actions-runner'
+[2022-01-10 08:48:45Z INFO HostContext] Well known directory 'Diag': 'E:\medisage\actions-runner\_diag'
+[2022-01-10 08:48:45Z INFO HostContext] Well known config file 'Telemetry': 'E:\medisage\actions-runner\_diag\.telemetry'
+[2022-01-10 08:48:45Z INFO JobRunner] Raising job completed event.
+[2022-01-10 08:48:45Z INFO Worker] Job completed.
